@@ -6,12 +6,16 @@ module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     'asset-cache': {
       include: [
-        'assets/**/*'
+        'assets/**/*',
+        'icons/**/*'
       ]
+    },
+    'ember-service-worker': {
+      registrationStrategy: 'inline',
+      versionStrategy: 'project-revision'
     },
     'esw-cache-fallback': {
       patterns: [ '/' ],
-      version: '1' // Changing the version will bust the cache
     }
   });
 
