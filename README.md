@@ -1,5 +1,7 @@
 # EmberConf 2018 Schedule
 
+[![TravisCi](https://travis-ci.org/201-created/emberconf-schedule-2018.svg?branch=master)](https://travis-ci.org/201-created/emberconf-schedule-2018)
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
