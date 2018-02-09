@@ -1,7 +1,4 @@
-# emberconf
-
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+# EmberConf 2018 Schedule
 
 ## Prerequisites
 
@@ -15,8 +12,8 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd emberconf`
+* `git clone git@github.com:201-created/emberconf-schedule-2018.git` this repository
+* `cd emberconf-schedule-2018`
 * `yarn install`
 
 ## Running / Development
