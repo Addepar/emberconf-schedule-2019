@@ -2,14 +2,14 @@
   "name": "emberconf",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for emberconf goes here",
+  "description": "Mobile-friendly PWA for viewing the 2018 EmberConf schedule",
   "license": "MIT",
-  "author": "",
+  "author": "201 Created, Inc.",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/201-created/emberconf-schedule-2018",
   "scripts": {
     "build": "ember build",
     "lint:js": "eslint ./*.js app config lib server tests",
