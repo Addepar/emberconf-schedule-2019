@@ -2,7 +2,6 @@ export default [
   {
     date: '2018-03-13',
     sessions: [
-      { title: 'Registration' },
       { title: 'Opening Keynote' },
       { title: 'Ambitious for All: Accessibility in Ember' },
       { title: 'Everything They Didn\'t Tell You About the Ember Community' },
