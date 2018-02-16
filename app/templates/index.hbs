@@ -1,0 +1,13 @@
+<h2>Sessions</h2>
+
+<ul>
+  {{#each days as |day|}}
+    <li>{{day.date}}
+      <ul>
+        {{#each day.sessions as |session|}}
+          <li>{{session.title}}</li>
+        {{/each}}
+      </ul>
+    </li>
+  {{/each}}
+</ul>
