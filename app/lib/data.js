@@ -10,7 +10,7 @@ export default [
       { title: 'The Next Generation of Testing' },
       { title: 'Who Moved My Cheese? Ember\'s New Filesystem Layout' },
       { title: 'Snack Break' },
-      { title: 'Mastering the Are of Forms' },
+      { title: 'Mastering the Art of Forms' },
       { title: 'How to Build a Bonfire: On Training and Hiring New Devs' },
       { title: 'Living Animation' }
     ]
