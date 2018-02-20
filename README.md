@@ -47,6 +47,15 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 Specify what it takes to deploy your app.
 
+## Updating Source Data
+
+A Ruby rake task is included in this project's `Rakefile` that will update the contents of `app/lib/data.js`:
+
+```shell
+gem install titleize # if titleize is not already installed
+rake
+```
+
 ## Further Reading / Useful Links
 
 * [ember.js](https://emberjs.com/)
