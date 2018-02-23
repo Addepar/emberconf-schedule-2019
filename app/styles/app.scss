@@ -1,0 +1,24 @@
+// Colors
+$background: #e8edf1;
+$header: #001d36;
+
+body {
+  background-color: $background;
+}
+
+header {
+  padding: 12px;
+  padding-top: env(safe-area-inset-top);
+  background-color: $header;
+
+  .emberconf {
+    max-width: 30%;
+    height: auto;
+  }
+
+  .two-oh-one {
+    float: right;
+    max-width: 25%;
+    height: auto;
+  }
+}

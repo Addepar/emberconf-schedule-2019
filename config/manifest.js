@@ -6,7 +6,7 @@ module.exports = function(/* environment, appConfig */) {
   // supported properties
 
   return {
-    name: "EmberConf 2018",
+    name: "EmberConf",
     short_name: "EmberConf",
     description: "EmberConf 2018 Schedule",
     start_url: "/",
@@ -43,6 +43,9 @@ module.exports = function(/* environment, appConfig */) {
         targets: ['safari-pinned-tab'] // non-standard-property
       }
     ],
+    apple: {
+      statusBarStyle: 'black-translucent'
+    },
     ms: {
       tileColor: '#001d36'
     }
