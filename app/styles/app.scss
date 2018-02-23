@@ -7,18 +7,18 @@ body {
 }
 
 header {
-  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
   padding-top: env(safe-area-inset-top);
   background-color: $header;
 
-  .emberconf {
-    max-width: 30%;
-    height: auto;
+  a {
+    line-height: 0;
   }
-
-  .two-oh-one {
-    float: right;
-    max-width: 25%;
-    height: auto;
+  svg {
+    height: 60px;
+    width: auto;
   }
 }
