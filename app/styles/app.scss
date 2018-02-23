@@ -2,16 +2,38 @@
 $background: #e8edf1;
 $header: #001d36;
 
+html, body {
+  position: fixed;
+  overflow: hidden;
+  height: 100%;
+}
+
 body {
   background-color: $background;
+}
+
+body > .ember-view {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  header {
+    flex: 0 0 auto;
+  }
+
+  .content {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  padding-top: env(safe-area-inset-top);
+  padding: 15px;
+  padding-top: calc(env(safe-area-inset-top) + 15px);
   background-color: $header;
 
   a {
