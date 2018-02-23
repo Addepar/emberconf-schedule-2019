@@ -1,9 +1,15 @@
 <small>{{formattedStart}}-{{formattedEnd}}</small>
+
 <h3>{{session.name}}</h3>
+
 {{#if session.speakers}}
   <ul class="speakers">
     {{#each session.speakers as |speaker|}}
       <li>{{speaker}}</li>
     {{/each}}
   </ul>
+{{/if}}
+
+{{#if session.description}}
+  <div class="description">{{session.description}}</div>
 {{/if}}

@@ -3,6 +3,7 @@ $background: #e8edf1;
 $header: #001d36;
 $session: white;
 $speaker: rgba(64,88,110,0.7);
+$description: #40586e;
 
 html, body {
   position: fixed;
@@ -30,6 +31,7 @@ body > .ember-view {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     padding-bottom: 1rem;
+    padding-bottom: calc(env(safe-area-inset-bottom) + 15px);
   }
 }
 
@@ -83,6 +85,33 @@ h2 {
     li {
       display: inline-block;
       color: $speaker;
+
+      &:after {
+        content: ' · ';
+      }
+
+      &:last-child:after {
+        content: '';
+      }
+    }
+  }
+
+  .description {
+    margin-top: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.15s ease-out, margin-top;
+    transition-delay: 0s, 0.15s;
+    color: $description;
+    white-space: pre-line;
+  }
+
+  &.is-expanded {
+    .description {
+      max-height: 1000px;
+      margin-top: 8px;
+      transition: max-height 0.3s ease-in;
+      transition-delay: 0s;
     }
   }
 }

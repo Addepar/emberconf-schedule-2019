@@ -57,7 +57,7 @@ def parsed_event(event_data, date)
   }
 
   event["speakers"] = parsed_speakers(event_data["speakers"]) if event_data["speakers"]
-  event["description"] = event_data["description"].strip if event_data["description"]
+  event["description"] = event_data["description"].delete('>').strip if event_data["description"]
   event["sessions"] = parsed_event_sessions(event_data["sessions"]) if event_data["sessions"]
 
   event

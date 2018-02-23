@@ -6,7 +6,9 @@ const TIME_FORMAT = 'h:mm a';
 
 export default Component.extend({
   classNames: ['session'],
+  classNameBindings: ['isExpanded'],
 
+  isExpanded: false,
   session: null,
 
   formattedStart: computed('session.start', function() {
@@ -15,5 +17,9 @@ export default Component.extend({
 
   formattedEnd: computed('session.end', function() {
     return moment(this.get('session.end')).utcOffset('-07:00').format(TIME_FORMAT);
-  })
+  }),
+
+  click() {
+    this.toggleProperty('isExpanded');
+  }
 });

@@ -73,7 +73,7 @@ export default [
         "speakers": [
           "Danielle Adams"
         ],
-        "description": ">\"Building forms in @emberjs is terrifying because I'm stuck with decisions I always later regret.\"\n—me in another lifetime\n\nHTML forms can represent a time before JavaScript was an integral part of application development. Creating forms isn’t always the most exciting part of development and, at times, it may seem daunting. Fear not! I’d like to talk through some pain points of building an important piece of user interface: we will discuss what to do, what not to do, and which Ember addons have come to the rescue."
+        "description": "\"Building forms in @emberjs is terrifying because I'm stuck with decisions I always later regret.\"\n—me in another lifetime\n\nHTML forms can represent a time before JavaScript was an integral part of application development. Creating forms isn’t always the most exciting part of development and, at times, it may seem daunting. Fear not! I’d like to talk through some pain points of building an important piece of user interface: we will discuss what to do, what not to do, and which Ember addons have come to the rescue."
       },
       {
         "name": "How to Build a Bonfire: On Training and Hiring New Devs",
@@ -207,7 +207,7 @@ export default [
       {
         "name": "Closing Keynote",
         "start": "2018-03-14T17:30:00-07:00",
-        "end": "2018-03-14T18:30:00-07:00",
+        "end": "2018-03-14T18:15:00-07:00",
         "speakers": [
           "Saron Yitbarek",
           "Vaidehi Joshi"
