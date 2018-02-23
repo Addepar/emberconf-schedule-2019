@@ -38,7 +38,6 @@
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^1.0.0",
     "ember-maybe-import-regenerator": "^0.1.6",
-    "ember-moment": "^7.6.0",
     "ember-resolver": "^4.0.0",
     "ember-service-worker": "^0.6.9",
     "ember-service-worker-asset-cache": "^0.6.2",

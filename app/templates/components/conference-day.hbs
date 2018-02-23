@@ -1,7 +1,5 @@
 <h2>{{title}}</h2>
 
-<ul>
-  {{#each day.sessions as |session|}}
-    {{conference-session session=session}}
-  {{/each}}
-</ul>
+{{#each day.sessions as |session|}}
+  {{conference-session session=session}}
+{{/each}}
