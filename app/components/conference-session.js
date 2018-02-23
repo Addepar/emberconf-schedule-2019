@@ -9,10 +9,14 @@ export default Component.extend(RecognizerMixin, {
   recognizers: 'tap',
 
   classNames: ['session'],
-  classNameBindings: ['isExpanded'],
+  classNameBindings: ['isBreak', 'isExpanded'],
 
   isExpanded: false,
   session: null,
+
+  isBreak: computed('session.name', function() {
+    return ['Lunch', 'Snack Break'].includes(this.get('session.name'));
+  }),
 
   formattedStart: computed('session.start', function() {
     return moment(this.get('session.start')).utcOffset('-07:00').format(TIME_FORMAT);

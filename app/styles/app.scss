@@ -108,6 +108,10 @@ h2 {
     white-space: pre-line;
   }
 
+  &.is-break {
+    background: transparent;
+  }
+
   &.is-expanded {
     .description {
       max-height: 1000px;
