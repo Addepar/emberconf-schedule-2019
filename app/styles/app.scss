@@ -45,11 +45,24 @@ header {
   background: $header;
 
   a {
+    display: block;
     line-height: 0;
+    width: 5rem;
+
+    &:last-child {
+      text-align: right;
+    }
   }
   svg {
     height: 3rem;
     width: auto;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: white;
   }
 }
 
