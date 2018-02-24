@@ -18,9 +18,9 @@
       <ul class="minitalks">
         {{#each session.sessions as |minitalk|}}
           <li>
-            <div class="minitalk-time">{{minitalk.time}}</div>
-            <div class="minitalk-title">{{minitalk.title}}</div>
-            <div class="minitalk-speaker">{{minitalk.speaker}}</div>
+            <small>{{minitalk.time}}</small>
+            <h4>{{minitalk.title}}</h4>
+            <p>{{minitalk.speaker}}</p>
           </li>
         {{/each}}
       </ul>
