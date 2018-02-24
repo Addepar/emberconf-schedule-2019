@@ -11,5 +11,19 @@
 {{/if}}
 
 {{#if session.description}}
-  <div class="description">{{session.description}}</div>
+  <div class="description">
+    <p>{{session.description}}</p>
+
+    {{#if session.sessions}}
+      <ul class="minitalks">
+        {{#each session.sessions as |minitalk|}}
+          <li>
+            <div class="minitalk-time">{{minitalk.time}}</div>
+            <div class="minitalk-title">{{minitalk.title}}</div>
+            <div class="minitalk-speaker">{{minitalk.speaker}}</div>
+          </li>
+        {{/each}}
+      </ul>
+    {{/if}}
+  </div>
 {{/if}}

@@ -2,7 +2,6 @@
 $background: #e8edf1;
 $header: #001d36;
 $session: white;
-$speaker: rgba(64,88,110,0.7);
 $description: #40586e;
 
 html, body {
@@ -86,7 +85,7 @@ h2 {
 
     li {
       display: inline-block;
-      color: $speaker;
+      color: rgba($description, 0.7);
 
       &:after {
         content: ' · ';
@@ -104,8 +103,39 @@ h2 {
     max-height: 0;
     transition: max-height 0.15s ease-out, margin-top;
     transition-delay: 0s, 0.15s;
-    color: $description;
-    white-space: pre-line;
+
+    p {
+      margin: 0;
+      color: $description;
+      white-space: pre-line;
+    }
+  }
+
+  ul.minitalks {
+    list-style-type: none;
+    margin-top: 8px;
+    margin-bottom: 0;
+    padding-left: 15px;
+
+    li {
+      padding: 4px 0;
+      border-bottom: solid 1px rgba($description, 0.3);
+
+      .minitalk-title {
+        font-weight: bold;
+      }
+      .minitalk-speaker {
+        color: rgba($description, 0.7);
+      }
+
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+    }
   }
 
   &.is-break {
