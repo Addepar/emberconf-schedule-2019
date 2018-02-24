@@ -30,7 +30,7 @@ body > .ember-view {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     padding-bottom: 1rem;
-    padding-bottom: calc(env(safe-area-inset-bottom) + 15px);
+    padding-bottom: calc(env(safe-area-inset-bottom) + 1rem);
   }
 }
 
@@ -38,39 +38,39 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 15px;
-  padding-top: calc(env(safe-area-inset-top) + 8px);
-  padding-left: calc(env(safe-area-inset-left) + 15px);
-  padding-right: calc(env(safe-area-inset-right) + 15px);
+  padding: 0.5rem 1rem;
+  padding-top: calc(env(safe-area-inset-top) + 0.5rem);
+  padding-left: calc(env(safe-area-inset-left) + 1rem);
+  padding-right: calc(env(safe-area-inset-right) + 1rem);
   background: $header;
 
   a {
     line-height: 0;
   }
   svg {
-    height: 45px;
+    height: 3rem;
     width: auto;
   }
 }
 
 h2 {
   margin: 0;
-  padding: 15px;
-  padding-left: calc(env(safe-area-inset-left) + 15px);
-  padding-right: calc(env(safe-area-inset-right) + 15px);
+  padding: 1rem;
+  padding-left: calc(env(safe-area-inset-left) + 1rem);
+  padding-right: calc(env(safe-area-inset-right) + 1rem);
   text-align: center;
 }
 
 .session {
-  margin: 2px 8px;
-  margin-left: calc(env(safe-area-inset-left) + 8px);
-  margin-right: calc(env(safe-area-inset-right) + 8px);
-  padding: 15px;
+  margin: 0.125rem 0.5rem;
+  margin-left: calc(env(safe-area-inset-left) + 0.5rem);
+  margin-right: calc(env(safe-area-inset-right) + 0.5rem);
+  padding: 1rem;
   background: $session;
 
   small {
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 0.25rem;
   }
 
   h3 {
@@ -79,7 +79,7 @@ h2 {
 
   ul.speakers {
     list-style-type: none;
-    margin-top: 4px;
+    margin-top: 0.25rem;
     margin-bottom: 0;
     padding: 0;
 
@@ -113,12 +113,12 @@ h2 {
 
   ul.minitalks {
     list-style-type: none;
-    margin-top: 8px;
+    margin-top: 0.5rem;
     margin-bottom: 0;
-    padding-left: 15px;
+    padding-left: 1rem;
 
     li {
-      padding: 4px 0;
+      padding: 0.25rem 0;
       border-bottom: solid 1px rgba($description, 0.3);
 
       .minitalk-title {
@@ -144,8 +144,8 @@ h2 {
 
   &.is-expanded {
     .description {
-      max-height: 1000px;
-      margin-top: 8px;
+      max-height: 100rem;
+      margin-top: 0.5rem;
       transition: max-height 0.3s ease-in;
       transition-delay: 0s;
     }
