@@ -1,5 +1,8 @@
 <h2>{{title}}</h2>
 
 {{#each day.sessions as |session|}}
-  {{conference-session session=session}}
+  {{conference-session
+    now=now
+    session=session
+  }}
 {{/each}}

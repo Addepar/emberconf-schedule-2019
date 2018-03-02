@@ -1,3 +1,7 @@
 {{#each days as |day index|}}
-  {{conference-day day=day index=index}}
+  {{conference-day
+    day=day
+    index=index
+    now=now
+  }}
 {{/each}}

@@ -3,6 +3,7 @@ $background: #e8edf1;
 $header: #001d36;
 $session: white;
 $description: #40586e;
+$ember: #e15d44;
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -142,6 +143,10 @@ h2 {
 
   &.is-break {
     background: transparent;
+  }
+
+  &.is-now {
+    outline: solid 2px $ember;
   }
 
   &.is-expanded {
