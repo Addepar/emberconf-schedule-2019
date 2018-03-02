@@ -13,10 +13,15 @@ export default Route.extend({
   afterModel() {
     if (this.get('fastboot.isFastBoot')) { return; }
 
+    // Scroll to current/upcoming sessions
     this.get('scheduler').scheduleWork('afterContentPaint', () => {
-      // Scroll second-to-last finished session to top to ensure upcoming sessions are visible
+      let header = document.querySelector('header');
       let pastSessions = document.getElementsByClassName('is-past');
-      pastSessions[pastSessions.length-2].scrollIntoView(true);
+      if (pastSessions.length) {
+        let pastSession = pastSessions[pastSessions.length-1];
+        let topScrollSession = (header.offsetHeight > pastSession.offsetHeight) ? pastSessions[pastSessions.length-2] : pastSession;
+        topScrollSession.scrollIntoView(true);
+      }
     })
   }
 });
