@@ -141,12 +141,16 @@ h2 {
     }
   }
 
-  &.is-break {
-    background: transparent;
-  }
-
   &.is-now {
     outline: solid 2px $ember;
+  }
+
+  &.is-past {
+    background: rgba($session, 0.4);
+  }
+
+  &.is-break {
+    background: transparent;
   }
 
   &.is-expanded {

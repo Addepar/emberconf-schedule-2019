@@ -9,7 +9,7 @@ export default Component.extend(RecognizerMixin, {
   recognizers: 'tap',
 
   classNames: ['session'],
-  classNameBindings: ['isBreak', 'isExpanded', 'isNow'],
+  classNameBindings: ['isBreak', 'isExpanded', 'isNow', 'isPast'],
 
   now: moment().format(),
   isExpanded: false,
@@ -21,6 +21,10 @@ export default Component.extend(RecognizerMixin, {
 
   isNow: computed('now', 'session.{start,end}', function() {
     return moment(this.get('now')).isBetween(this.get('session.start'), this.get('session.end'));
+  }),
+
+  isPast: computed('now', 'session.end', function() {
+    return moment(this.get('now')).isAfter(this.get('session.end'));
   }),
 
   formattedTime: computed('session.{start,end}', function() {
