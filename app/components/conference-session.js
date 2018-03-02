@@ -3,7 +3,7 @@ import RecognizerMixin from 'ember-gestures/mixins/recognizers';
 import { computed } from '@ember/object';
 import moment from 'moment';
 
-const TIME_FORMAT = 'h:mm a';
+const UTC_OFFSET = '-07:00';
 
 export default Component.extend(RecognizerMixin, {
   recognizers: 'tap',
@@ -18,13 +18,16 @@ export default Component.extend(RecognizerMixin, {
     return ['Lunch', 'Snack Break'].includes(this.get('session.name'));
   }),
 
-  formattedStart: computed('session.start', function() {
-    return moment(this.get('session.start')).utcOffset('-07:00').format(TIME_FORMAT);
+  formattedTime: computed('session.{start,end}', function() {
+    let startMoment = this._pdxMoment(this.get('session.start'));
+    let endMoment = this._pdxMoment(this.get('session.end'));
+    let startFormat = (startMoment.format('a') === endMoment.format('a')) ? 'h:mm' : 'h:mma';
+    return `${startMoment.format(startFormat)}-${endMoment.format('h:mma')}`;
   }),
 
-  formattedEnd: computed('session.end', function() {
-    return moment(this.get('session.end')).utcOffset('-07:00').format(TIME_FORMAT);
-  }),
+  _pdxMoment(timestamp) {
+    return moment(timestamp).utcOffset(UTC_OFFSET);
+  },
 
   tap() {
     this.toggleProperty('isExpanded');
