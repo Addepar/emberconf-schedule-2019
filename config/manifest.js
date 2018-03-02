@@ -33,11 +33,6 @@ module.exports = function(/* environment, appConfig */) {
         targets: ['favicon']
       },
       {
-        src: '/icons/70.png',
-        element: 'square70x70logo', // non-standard property
-        targets: ['ms'] // non-standard-property
-      },
-      {
         src: '/icons/logo-mono.svg',
         safariPinnedTabColor: '#e15d44', // non-standard property
         targets: ['safari-pinned-tab'] // non-standard-property
