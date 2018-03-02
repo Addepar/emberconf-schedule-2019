@@ -8,17 +8,33 @@ require "yaml"
 desc "Import session data"
 task :default do
 
-  schedule_uri = "https://raw.githubusercontent.com/tildeio/emberconf-2018/master/data/schedule.yml?token=AAPUNius2jt4YhYmuYBhLpOTXgPC_7r6ks5alJPhwA%3D%3D"
+  schedule_uri = "https://raw.githubusercontent.com/tildeio/emberconf-2018/master/data/schedule.yml?token=AAPUNsWY3Mj4DHTmmUDk7CW-u5M9rC5Vks5aotFUwA%3D%3D"
   data_lib = "app/lib/data.js";
 
   schedule_data = load_remote_yaml(schedule_uri)
-  parsed_data = parsed_days(schedule_data)
 
-  open(data_lib, "w+") do |f|
-    f << "export default "
-    f << JSON.pretty_generate(parsed_data)
-    f << ";"
+  if schedule_data[404]
+    puts red_output("The URL to the Yaml Schedule needs to be updated")
+  else
+
+    parsed_data = parsed_days(schedule_data)
+
+    open(data_lib, "w+") do |f|
+      f << "export default "
+      f << JSON.pretty_generate(parsed_data)
+      f << ";"
+    end
+
+    puts green_output("Schedule data has been updated!")
   end
+end
+
+def red_output(string)
+  "\033[31m#{string}\033[0m"
+end
+
+def green_output(string)
+  "\033[32m#{string}\033[0m"
 end
 
 def load_remote_yaml(uri)

@@ -92,6 +92,12 @@ export default [
           "Edward Faulkner"
         ],
         "description": "Most animation on the web is canned, non-interactive, and inflexible. It doesn’t dynamically adjust itself to changing conditions and user interactions. It’s expensive to create and maintain because the programmer or designer is trying to micromanage the motion. It needs to be hand-tuned for each new feature, device, or media query breakpoint.\n\nThere is an alternative: we can think more like game designers. We can build robust, dynamic systems that animate gracefully, with clear separation between app logic and app motion."
+      },
+      {
+        "name": "Happy Hour!",
+        "start": "2018-03-13T18:00:00-07:00",
+        "end": "2018-03-13T19:00:00-07:00",
+        "description": "Join us in the main sponsor hall and cap off the day with friends, drinks and snacks before you head off to dinner."
       }
     ]
   },
