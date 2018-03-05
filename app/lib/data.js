@@ -191,13 +191,13 @@ export default [
           },
           {
             "time": "4:15-4:20pm",
-            "title": "TBD",
+            "title": "Lighting Thoughts on Lighting Deploy",
             "speaker": "Christina Kung"
           },
           {
             "time": "4:20-4:30pm",
-            "title": "TBD",
-            "speaker": "TBD"
+            "title": "Let Me Ember This for You",
+            "speaker": "Serena Fritsch"
           }
         ]
       },
