@@ -2793,9 +2793,9 @@ ember-inflector@^2.0.0:
   dependencies:
     ember-cli-babel "^6.0.0"
 
-ember-inline-css@^0.0.9:
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/ember-inline-css/-/ember-inline-css-0.0.9.tgz#794f7f7b45b546d09149177bd282b49f2c5f1549"
+"ember-inline-css@github:201-created/ember-inline-css#kpfefferle/before-config":
+  version "0.0.8"
+  resolved "https://codeload.github.com/201-created/ember-inline-css/tar.gz/e9211e1a92bf66bbb86672ea52630d5b7db90da7"
   dependencies:
     broccoli-merge-trees "^2.0.0"
     broccoli-plugin "^1.3.0"
@@ -3444,20 +3444,7 @@ fastboot-transform@^0.1.2:
     broccoli-stew "^1.5.0"
     convert-source-map "^1.5.1"
 
-fastboot@^1.1.2:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/fastboot/-/fastboot-1.1.3.tgz#56c5f56415c5ae8de2db539c0d3ecbcd65538f8b"
-  dependencies:
-    chalk "^2.0.1"
-    cookie "^0.3.1"
-    debug "^3.0.0"
-    exists-sync "0.0.4"
-    najax "^1.0.2"
-    rsvp "^4.7.0"
-    simple-dom "^1.0.0"
-    source-map-support "^0.5.0"
-
-"fastboot@github:rondale-sc/fastboot#utilize-rehydration-serialization-from-glimmer":
+fastboot@^1.1.2, "fastboot@github:rondale-sc/fastboot#utilize-rehydration-serialization-from-glimmer":
   version "1.1.3"
   resolved "https://codeload.github.com/rondale-sc/fastboot/tar.gz/ac5911f97de4facb2ac468b04436e97c22d261f7"
   dependencies:
