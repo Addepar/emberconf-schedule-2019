@@ -1,9 +1,8 @@
 import Component from '@ember/component';
 import RecognizerMixin from 'ember-gestures/mixins/recognizers';
 import { computed } from '@ember/object';
+import ENV from 'emberconf/config/environment';
 import moment from 'moment';
-
-const UTC_OFFSET = '-07:00';
 
 export default Component.extend(RecognizerMixin, {
   recognizers: 'tap',
@@ -35,7 +34,7 @@ export default Component.extend(RecognizerMixin, {
   }),
 
   _pdxMoment(timestamp) {
-    return moment(timestamp).utcOffset(UTC_OFFSET);
+    return moment(timestamp).utcOffset(ENV.APP.UTC_OFFSET);
   },
 
   tap() {

@@ -2,6 +2,7 @@ import Controller from '@ember/controller';
 import { alias } from '@ember/object/computed';
 import { later } from '@ember/runloop';
 import { inject as service } from '@ember/service';
+import ENV from 'emberconf/config/environment';
 import moment from 'moment';
 
 export default Controller.extend({
@@ -12,9 +13,9 @@ export default Controller.extend({
   now: null,
 
   _setNow() {
-    // FIXME: Force Day 1 date with local clock time for testing
-    let localTime = moment().format('HH:mm:ss');
-    this.set('now', moment(`2018-03-13T${localTime}-07:00`).format());
+    // FIXME: Force Day 1 date with Portland clock time for testing
+    let localTime = moment().utcOffset(ENV.APP.UTC_OFFSET).format('HH:mm:ss');
+    this.set('now', moment(`2018-03-13T${localTime}${ENV.APP.UTC_OFFSET}`).format());
 
     if (this.get('fastboot.isFastBoot')) { return; }
 
