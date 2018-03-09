@@ -20,11 +20,11 @@ export default Component.extend(RecognizerMixin, {
   }),
 
   isNow: computed('now', 'session.{start,end}', function() {
-    return moment(this.get('now')).isBetween(this.get('session.start', null, '[)'), this.get('session.end'));
+    return moment(this.now).isBetween(this.get('session.start', null, '[)'), this.get('session.end'));
   }),
 
   isPast: computed('now', 'session.end', function() {
-    return moment(this.get('now')).isSameOrAfter(this.get('session.end'));
+    return moment(this.now).isSameOrAfter(this.get('session.end'));
   }),
 
   formattedTime: computed('session.{start,end}', function() {

@@ -14,7 +14,7 @@ export default Route.extend({
     if (this.get('fastboot.isFastBoot')) { return; }
 
     // Scroll to current/upcoming sessions
-    this.get('scheduler').scheduleWork('afterContentPaint', () => {
+    this.scheduler.scheduleWork('afterContentPaint', () => {
       let header = document.querySelector('header');
       let pastSessions = document.getElementsByClassName('is-past');
       if (pastSessions.length) {
