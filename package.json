@@ -39,7 +39,7 @@
     "ember-export-application-global": "^2.0.0",
     "ember-gestures": "^0.4.8",
     "ember-hammertime": "^1.2.4",
-    "ember-inline-css": "^0.0.9",
+    "ember-inline-css": "github:201-created/ember-inline-css#kpfefferle/before-config",
     "ember-load-initializers": "^1.0.0",
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-resolver": "^4.0.0",
