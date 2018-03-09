@@ -10,6 +10,12 @@ module.exports = function(defaults) {
         'icons/**/*'
       ]
     },
+    'ember-inline-css': {
+      filter: [
+        '/assets/vendor.css',
+        '/assets/emberconf.css'
+      ]
+    },
     'ember-service-worker': {
       registrationStrategy: 'inline',
       versionStrategy: 'project-revision'
