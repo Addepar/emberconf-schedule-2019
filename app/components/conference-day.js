@@ -7,7 +7,7 @@ export default Component.extend({
   index: 0,
 
   title: computed('day.date', function () {
-    let dayNumber = this.get('index') + 1;
+    let dayNumber = this.index + 1;
     let formattedDate = moment(this.get('day.date')).format('MMMM D');
     return `Day ${dayNumber}: ${formattedDate}`;
   })
