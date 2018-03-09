@@ -2793,9 +2793,9 @@ ember-inflector@^2.0.0:
   dependencies:
     ember-cli-babel "^6.0.0"
 
-"ember-inline-css@github:201-created/ember-inline-css#kpfefferle/before-config":
-  version "0.0.8"
-  resolved "https://codeload.github.com/201-created/ember-inline-css/tar.gz/e9211e1a92bf66bbb86672ea52630d5b7db90da7"
+ember-inline-css@^0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/ember-inline-css/-/ember-inline-css-0.0.10.tgz#04161030132f5ead07f4c7b219f8d14236deb8eb"
   dependencies:
     broccoli-merge-trees "^2.0.0"
     broccoli-plugin "^1.3.0"
