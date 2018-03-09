@@ -1,7 +1,7 @@
 import Component from '@ember/component';
 import { computed } from '@ember/object';
 import ENV from 'emberconf/config/environment';
-import moment from 'moment';
+import moment from 'emberconf/src/libs/moment';
 
 export default Component.extend({
   classNames: ['session'],
