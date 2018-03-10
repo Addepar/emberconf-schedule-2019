@@ -7,7 +7,8 @@ module.exports = function(defaults) {
     'asset-cache': {
       include: [
         'assets/**/*',
-        'icons/**/*'
+        'icons/**/*',
+        'manifest.webmanifest'
       ]
     },
     'ember-inline-css': {
