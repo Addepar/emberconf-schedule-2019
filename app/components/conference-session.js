@@ -1,12 +1,9 @@
 import Component from '@ember/component';
-import RecognizerMixin from 'ember-gestures/mixins/recognizers';
 import { computed } from '@ember/object';
 import ENV from 'emberconf/config/environment';
 import moment from 'moment';
 
-export default Component.extend(RecognizerMixin, {
-  recognizers: 'tap',
-
+export default Component.extend({
   classNames: ['session'],
   classNameBindings: ['isBreak', 'isExpanded', 'isNow', 'isPast'],
 
@@ -37,7 +34,7 @@ export default Component.extend(RecognizerMixin, {
     return moment(timestamp).utcOffset(ENV.APP.UTC_OFFSET);
   },
 
-  tap() {
+  click() {
     this.toggleProperty('isExpanded');
   }
 });
