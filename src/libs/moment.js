@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 //! moment.js
 
 var hookCallback;
