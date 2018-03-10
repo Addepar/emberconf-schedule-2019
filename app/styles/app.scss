@@ -90,7 +90,7 @@ h2 {
 
     li {
       display: inline-block;
-      color: rgba($description, 0.7);
+      color: $description;
 
       &:after {
         content: ' · ';
