@@ -67,6 +67,11 @@ h2 {
   margin-right: calc(env(safe-area-inset-right) + 0.5rem);
   padding: 1rem;
   background: $session;
+  touch-action: manipulation;
+
+  &:hover {
+    cursor: pointer;
+  }
 
   small {
     display: block;

@@ -2610,7 +2610,7 @@ ember-cli-valid-component-name@^1.0.0:
   dependencies:
     silent-error "^1.0.0"
 
-ember-cli-version-checker@^1.0.2, ember-cli-version-checker@^1.2.0:
+ember-cli-version-checker@^1.0.2:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/ember-cli-version-checker/-/ember-cli-version-checker-1.3.1.tgz#0bc2d134c830142da64bf9627a0eded10b61ae72"
   dependencies:
@@ -2749,44 +2749,6 @@ ember-export-application-global@^2.0.0:
   resolved "https://registry.yarnpkg.com/ember-export-application-global/-/ember-export-application-global-2.0.0.tgz#8d6d7619ac8a1a3f8c43003549eb21ebed685bd2"
   dependencies:
     ember-cli-babel "^6.0.0-beta.7"
-
-ember-factory-for-polyfill@^1.1.0:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/ember-factory-for-polyfill/-/ember-factory-for-polyfill-1.3.1.tgz#b446ed64916d293c847a4955240eb2c993b86eae"
-  dependencies:
-    ember-cli-version-checker "^2.1.0"
-
-ember-gestures@^0.4.8:
-  version "0.4.8"
-  resolved "https://registry.yarnpkg.com/ember-gestures/-/ember-gestures-0.4.8.tgz#b149e63dfbef21145adc856cd459460aad30dc37"
-  dependencies:
-    broccoli-funnel "^2.0.1"
-    broccoli-merge-trees "^2.0.0"
-    broccoli-stew "^1.5.0"
-    ember-cli-babel "^6.8.2"
-    ember-cli-htmlbars "^2.0.1"
-    ember-cli-version-checker "^1.2.0"
-    ember-getowner-polyfill "^1.2.3"
-    hammerjs "^2.0.8"
-    rsvp "^3.1.0"
-
-ember-getowner-polyfill@^1.2.3:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/ember-getowner-polyfill/-/ember-getowner-polyfill-1.2.5.tgz#ceff8a09897d0d7e05c821bb71666a95eb26dc92"
-  dependencies:
-    ember-cli-babel "^5.1.6"
-    ember-cli-version-checker "^1.2.0"
-    ember-factory-for-polyfill "^1.1.0"
-
-ember-hammertime@^1.2.4:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/ember-hammertime/-/ember-hammertime-1.3.0.tgz#8d709b8dac90a82fc1428c2a91010509cba82d01"
-  dependencies:
-    broccoli-funnel "^2.0.1"
-    broccoli-merge-trees "^2.0.0"
-    broccoli-stew "^1.5.0"
-    ember-cli-babel "^6.8.2"
-    hammer-timejs "^1.1.0"
 
 ember-inflector@^2.0.0:
   version "2.1.0"
@@ -3890,14 +3852,6 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.3, graceful-fs@^4.1.4,
 growly@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/growly/-/growly-1.3.0.tgz#f10748cbe76af964b7c96c93c6bcc28af120c081"
-
-hammer-timejs@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/hammer-timejs/-/hammer-timejs-1.1.0.tgz#fc07ec1e4012228fe51b6a51218ec12661a32a42"
-
-hammerjs@^2.0.8:
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/hammerjs/-/hammerjs-2.0.8.tgz#04ef77862cff2bb79d30f7692095930222bf60f1"
 
 handlebars@^4.0.4:
   version "4.0.11"
