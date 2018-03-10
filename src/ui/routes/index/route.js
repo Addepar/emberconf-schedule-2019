@@ -1,6 +1,6 @@
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
-import Schedule from 'emberconf/lib/data';
+import Schedule from "emberconf/src/libs/data";
 
 export default Route.extend({
   fastboot: service(),

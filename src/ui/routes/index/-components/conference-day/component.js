@@ -1,6 +1,6 @@
 import Component from '@ember/component';
 import { computed } from '@ember/object';
-import moment from 'moment';
+import moment from 'emberconf/src/libs/moment';
 
 export default Component.extend({
   day: null,
