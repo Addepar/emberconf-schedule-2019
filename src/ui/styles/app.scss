@@ -66,6 +66,7 @@ footer {
   padding-right: calc(env(safe-area-inset-right) + 1rem);
   background: $header;
   text-align: center;
+  transition: bottom 0.3s ease-out;
 
   p {
     margin-top: 0;
@@ -85,6 +86,22 @@ footer {
     border-radius: 0.25rem;
     color: white;
     text-decoration: none;
+  }
+
+  button.close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    right: calc(env(safe-area-inset-right) + 0.5rem);
+    width: 1.25rem;
+    height: 1.25rem;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+  }
+
+  &.is-dismissed {
+    bottom: -10rem;
   }
 }
 
