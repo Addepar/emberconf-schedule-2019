@@ -45,7 +45,7 @@
     "ember-service-worker-cache-fallback": "^0.6.1",
     "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/0b0765f270e23b221fded09bea876a940dfb23b2.tgz",
     "ember-web-app": "^2.3.0",
-    "eslint-plugin-ember": "^5.0.0",
+    "eslint-plugin-ember": "^5.1.0",
     "loader.js": "^4.2.3"
   },
   "engines": {
