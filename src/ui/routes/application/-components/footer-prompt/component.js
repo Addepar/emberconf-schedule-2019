@@ -10,10 +10,11 @@ export default Component.extend({
 
   isDismissed: computed({
     get(key) { // eslint-disable-line no-unused-vars
-      if (!this.get('fastboot.isFastBoot')) {
+      if (this.get('fastboot.isFastBoot')) {
+        return true;
+      } else {
         return document.cookie.split(';').indexOf('isDismissed=true')  >= 0;
       }
-      return false;
     },
     set(key, value) { // eslint-disable-line no-unused-vars
       if (!this.get('fastboot.isFastBoot')) {
