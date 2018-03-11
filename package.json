@@ -19,7 +19,6 @@
   "devDependencies": {
     "@ember/optional-features": "^0.5.2",
     "broccoli-asset-rev": "^2.4.5",
-    "ember-ajax": "^3.1.0",
     "ember-app-scheduler": "^0.2.1",
     "ember-cli": "ember-cli/ember-cli#master",
     "ember-cli-babel": "^6.6.0",
@@ -31,7 +30,6 @@
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-qunit": "^4.3.2",
     "ember-cli-sass": "^7.1.7",
-    "ember-cli-shims": "^1.2.0",
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^2.0.0",
     "ember-inline-css": "^0.0.10",
