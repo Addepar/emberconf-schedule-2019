@@ -9,7 +9,7 @@ desc "Import session data"
 task :default do
 
   schedule_uri = "https://raw.githubusercontent.com/tildeio/emberconf-2018/master/data/schedule.yml?token=AAPUNn3MvpvTv6oMeijjXR-_qP81yVzjks5arAexwA%3D%3D"
-  data_lib = "app/lib/data.js";
+  data_lib = "src/libs/data.js";
 
   schedule_data = load_remote_yaml(schedule_uri)
 
