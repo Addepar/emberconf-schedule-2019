@@ -13,12 +13,16 @@ export default Controller.extend({
   now: null,
 
   _setNow() {
-    // FIXME: Force Day 1 date with Portland clock time for testing
-    let localTime = moment().utcOffset(ENV.APP.UTC_OFFSET).format('HH:mm:ss');
-    this.set('now', moment(`2018-03-13T${localTime}${ENV.APP.UTC_OFFSET}`).format());
+    if (ENV.APP.shouldForceDayOne) {
+      // Use conf Day 1 for development
+      let time = moment().utcOffset(ENV.APP.UTC_OFFSET).format('HH:mm:ss');
+      this.set('now', moment(`2018-03-13T${time}${ENV.APP.UTC_OFFSET}`).format());
+    } else {
+      // Use real date and time for non-dev environments
+      this.set('now', moment().utcOffset(ENV.APP.UTC_OFFSET).format());
+    }
 
-    if (this.get('fastboot.isFastBoot')) { return; }
-    if (!ENV.APP.shouldUpdateTime) { return; }
+    if (!ENV.APP.shouldUpdateTime || this.get('fastboot.isFastBoot')) { return; }
 
     later(this, function() {
       this._setNow();
