@@ -4,6 +4,8 @@ $header: #001d36;
 $session: white;
 $description: #40586e;
 $ember: #e15d44;
+$github: #24292e;
+$footer-link: #ffbf5e;
 
 html {
   line-height: 1.15;
@@ -50,6 +52,56 @@ header {
     font-size: 1.5rem;
     line-height: 1;
     color: white;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  padding-bottom: calc(env(safe-area-inset-bottom) + 1rem);
+  padding-left: calc(env(safe-area-inset-left) + 1rem);
+  padding-right: calc(env(safe-area-inset-right) + 1rem);
+  background: $header;
+  text-align: center;
+  transition: bottom 0.3s ease-out;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: white;
+    font-weight: bold;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    display: inline-block;
+    padding: 0.5em;
+    background: $ember;
+    border-radius: 0.25rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  button.close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    right: calc(env(safe-area-inset-right) + 0.5rem);
+    width: 1.25rem;
+    height: 1.25rem;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+  }
+
+  &.is-dismissed {
+    bottom: -10rem;
   }
 }
 
@@ -176,5 +228,13 @@ h2 {
       transition: max-height 0.3s ease-in;
       transition-delay: 0s;
     }
+  }
+}
+
+.github {
+  svg {
+    width: 2rem;
+    height: 2rem;
+    fill: rgba($github, 0.7);
   }
 }
