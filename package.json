@@ -50,7 +50,8 @@
     "normalize.css": "^8.0.0"
   },
   "engines": {
-    "node": "6.*"
+    "node": "^4.5 || 6.* || >= 7.*" ,
+    "npm": "4.6.1"
   },
   "dependencies": {
     "fastboot-app-server": "github:rondale-sc/fastboot-app-server#utilize-rehydration-serialization-from-glimmer"
