@@ -27,6 +27,7 @@ module.exports = function(environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
       UTC_OFFSET: '-07:00',
+      shouldForceDayOne: false,
       shouldUpdateTime: true
     }
   };
@@ -37,6 +38,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.APP.shouldForceDayOne = true;
   }
 
   if (environment === 'test') {
