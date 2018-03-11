@@ -26,7 +26,7 @@ export default Controller.extend({
 
     later(this, function() {
       this._setNow();
-    }, 1000);
+    }, 10000);
   },
 
   init() {
