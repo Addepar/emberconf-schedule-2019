@@ -5,7 +5,13 @@ $session: white;
 $description: #40586e;
 $ember: #e15d44;
 
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: $header;
   background: $background;
@@ -28,6 +34,7 @@ header {
     display: block;
     line-height: 0;
     width: 5rem;
+    background-color: transparent;
 
     &:last-child {
       text-align: right;
@@ -75,6 +82,7 @@ h2 {
   }
 
   small {
+    font-size: 80%;
     display: block;
     margin-bottom: 0.25rem;
   }
@@ -128,6 +136,7 @@ h2 {
       border-bottom: solid 1px rgba($description, 0.3);
 
       small {
+        font-size: 80%;
         margin-bottom: 0;
       }
       h4 {
