@@ -338,7 +338,7 @@ asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
 
-atob@^2.0.0:
+atob@^2.0.0, atob@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.0.3.tgz#19c7a760473774468f20b2d2d03372ad7d4cbf5d"
 
@@ -1873,9 +1873,9 @@ commander@^2.5.0, commander@^2.6.0, commander@^2.9.0:
   version "2.15.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.15.0.tgz#ad2a23a1c3b036e392469b8012cec6b33b4c1322"
 
-commander@~2.13.0:
-  version "2.13.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-2.13.0.tgz#6964bca67685df7c1f1430c584f07d7597885b9c"
+commander@~2.14.1:
+  version "2.14.1"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.14.1.tgz#2235123e37af8ca3c65df45b026dbd357b01b9aa"
 
 common-tags@^1.4.0:
   version "1.7.2"
@@ -2351,7 +2351,7 @@ ember-cli-eslint@^4.2.1:
 
 ember-cli-fastboot@iezer/ember-cli-fastboot#rehydration+module-unification:
   version "1.1.2"
-  resolved "https://codeload.github.com/iezer/ember-cli-fastboot/tar.gz/90d4777d1ae20ed256794c4d703d69b0b5785245"
+  resolved "https://codeload.github.com/iezer/ember-cli-fastboot/tar.gz/05704be66ac465f4a6b8bde317bf35e0d5f03ef6"
   dependencies:
     broccoli-concat "^3.2.2"
     broccoli-funnel "^2.0.0"
@@ -2440,8 +2440,8 @@ ember-cli-qunit@^4.3.2:
     ember-qunit "^3.3.2"
 
 ember-cli-sass@^7.1.7:
-  version "7.1.7"
-  resolved "https://registry.yarnpkg.com/ember-cli-sass/-/ember-cli-sass-7.1.7.tgz#66899134788ec8d2406a45f5346d4db47a2aa012"
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/ember-cli-sass/-/ember-cli-sass-7.2.0.tgz#293d1a94c43c1fdbb3835378e43d255e8ad5c961"
   dependencies:
     broccoli-funnel "^1.0.0"
     broccoli-merge-trees "^1.1.0"
@@ -2693,9 +2693,9 @@ ember-service-worker@^0.6.9:
     hash-for-dep "^1.0.2"
     rollup-plugin-replace "^1.1.1"
 
-"ember-source@https://s3.amazonaws.com/builds.emberjs.com/canary/shas/0b0765f270e23b221fded09bea876a940dfb23b2.tgz":
-  version "3.2.0-canary"
-  resolved "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/0b0765f270e23b221fded09bea876a940dfb23b2.tgz#fcff5ae39c3d6e8a8c6a50ab23f24bd42255467f"
+ember-source@./ember-source-3.2.0-master.tgz:
+  version "3.2.0-master"
+  resolved "./ember-source-3.2.0-master.tgz#2ccf1722b2774465a37a3cafdb4d926ccb8812e7"
   dependencies:
     broccoli-funnel "^2.0.1"
     broccoli-merge-trees "^2.0.0"
@@ -5161,7 +5161,7 @@ najax@^1.0.2:
     lodash.defaultsdeep "^4.6.0"
     qs "^6.2.0"
 
-nan@^2.3.0, nan@^2.3.2:
+nan@^2.3.0, nan@^2.9.2:
   version "2.9.2"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.9.2.tgz#f564d75f5f8f36a6d9456cca7a6c4fe488ab7866"
 
@@ -5248,8 +5248,8 @@ node-pre-gyp@^0.6.39:
     tar-pack "^3.4.0"
 
 node-sass@^4.7.2:
-  version "4.7.2"
-  resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-4.7.2.tgz#9366778ba1469eb01438a9e8592f4262bcb6794e"
+  version "4.8.0"
+  resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-4.8.0.tgz#96352c5814ac1d6742e6f0b391fa77e6110bc49d"
   dependencies:
     async-foreach "^0.1.3"
     chalk "^1.1.1"
@@ -5263,7 +5263,7 @@ node-sass@^4.7.2:
     lodash.mergewith "^4.6.0"
     meow "^3.7.0"
     mkdirp "^0.5.1"
-    nan "^2.3.2"
+    nan "^2.9.2"
     node-gyp "^3.3.1"
     npmlog "^4.0.0"
     request "~2.79.0"
@@ -6958,10 +6958,10 @@ uc.micro@^1.0.1, uc.micro@^1.0.5:
   resolved "https://registry.yarnpkg.com/uc.micro/-/uc.micro-1.0.5.tgz#0c65f15f815aa08b560a61ce8b4db7ffc3f45376"
 
 uglify-es@^3.1.3:
-  version "3.3.9"
-  resolved "https://registry.yarnpkg.com/uglify-es/-/uglify-es-3.3.9.tgz#0c1c4f0700bed8dbc124cdb304d2592ca203e677"
+  version "3.3.10"
+  resolved "https://registry.yarnpkg.com/uglify-es/-/uglify-es-3.3.10.tgz#8b0b7992cebe20edc26de1bf325cef797b8f3fa5"
   dependencies:
-    commander "~2.13.0"
+    commander "~2.14.1"
     source-map "~0.6.1"
 
 uglify-js@^2.6, uglify-js@^2.7.0:
