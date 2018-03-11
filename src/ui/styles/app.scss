@@ -4,6 +4,7 @@ $header: #001d36;
 $session: white;
 $description: #40586e;
 $ember: #e15d44;
+$github: #24292e;
 
 html {
   line-height: 1.15;
@@ -176,5 +177,13 @@ h2 {
       transition: max-height 0.3s ease-in;
       transition-delay: 0s;
     }
+  }
+}
+
+.github {
+  svg {
+    width: 2rem;
+    height: 2rem;
+    fill: rgba($github, 0.7);
   }
 }
