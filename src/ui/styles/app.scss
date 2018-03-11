@@ -89,6 +89,7 @@ footer {
   }
 
   button.close {
+    display: block;
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
@@ -97,7 +98,10 @@ footer {
     height: 1.25rem;
     cursor: pointer;
     color: white;
+    font-weight: bold;
     text-align: center;
+    background: transparent;
+    border: none;
   }
 
   &.is-dismissed {
