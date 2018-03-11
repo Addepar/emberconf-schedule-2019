@@ -26,7 +26,8 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-      UTC_OFFSET: '-07:00'
+      UTC_OFFSET: '-07:00',
+      shouldUpdateTime: true
     }
   };
 
@@ -48,6 +49,7 @@ module.exports = function(environment) {
 
     ENV.APP.rootElement = '#ember-testing';
     ENV.APP.autoboot = false;
+    ENV.APP.shouldUpdateTime = false;
   }
 
   if (environment === 'production') {

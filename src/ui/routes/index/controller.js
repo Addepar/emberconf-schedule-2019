@@ -18,6 +18,7 @@ export default Controller.extend({
     this.set('now', moment(`2018-03-13T${localTime}${ENV.APP.UTC_OFFSET}`).format());
 
     if (this.get('fastboot.isFastBoot')) { return; }
+    if (!ENV.APP.shouldUpdateTime) { return; }
 
     later(this, function() {
       this._setNow();
