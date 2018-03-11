@@ -76,6 +76,7 @@ h2 {
   background: $session;
   touch-action: manipulation;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+  transition: background-color 0.3s;
 
   &:hover {
     cursor: pointer;
