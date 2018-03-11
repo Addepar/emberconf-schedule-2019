@@ -20,7 +20,7 @@ export default Route.extend({
       if (pastSessions.length) {
         let pastSession = pastSessions[pastSessions.length-1];
         let topScrollSession = (header.offsetHeight > pastSession.offsetHeight) ? pastSessions[pastSessions.length-2] : pastSession;
-        topScrollSession.scrollIntoView(true);
+        topScrollSession.scrollIntoView({ block: 'start', behavior: 'smooth' });
       }
     })
   }
