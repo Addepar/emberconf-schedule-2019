@@ -39,16 +39,20 @@
     "ember-service-worker": "^0.6.9",
     "ember-service-worker-asset-cache": "^0.6.2",
     "ember-service-worker-cache-fallback": "^0.6.1",
-    "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/0b0765f270e23b221fded09bea876a940dfb23b2.tgz",
+    "ember-source": "./ember-source-3.2.0-master.tgz",
     "ember-web-app": "^2.3.0",
     "eslint-plugin-ember": "^5.1.0",
     "loader.js": "^4.2.3"
   },
   "engines": {
-    "node": "^4.5 || 6.* || >= 7.*" ,
+    "node": "^4.5 || 6.* || >= 7.*",
     "npm": "4.6.1"
   },
   "dependencies": {
+    "atob": "^2.0.3",
     "fastboot-app-server": "github:rondale-sc/fastboot-app-server#utilize-rehydration-serialization-from-glimmer"
-  }
+  },
+  "fastbootDependencies": [
+    "atob"
+  ]
 }
