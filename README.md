@@ -62,8 +62,8 @@ Deployment to Heroku occurs automatically for the `master` branch.
 A Ruby rake task is included in this project's `Rakefile` that will update the contents of `app/lib/data.js`:
 
 ```shell
-gem install titleize # if titleize is not already installed
-rake
+bundle install
+bundle exec rake
 ```
 
 ## Further Reading / Useful Links
