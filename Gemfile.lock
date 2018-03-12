@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (12.3.0)
+    titleize (1.4.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rake
+  titleize
+
+BUNDLED WITH
+   1.16.1
