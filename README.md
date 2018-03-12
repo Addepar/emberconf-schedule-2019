@@ -2,6 +2,12 @@
 
 [![TravisCi](https://travis-ci.org/201-created/emberconf-schedule-2018.svg?branch=master)](https://travis-ci.org/201-created/emberconf-schedule-2018)
 
+## Features
+
+* Progressive Web App
+* Fastboot Rehydration
+* Module Unification
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
