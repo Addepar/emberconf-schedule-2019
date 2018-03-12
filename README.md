@@ -5,7 +5,7 @@
 ## Features
 
 * [Progressive Web App](https://madhatted.com/2017/6/16/building-a-progressive-web-app-with-ember)
-  * Perfect Lighthouse score
+  * Perfect 100 Lighthouse score
   * Save to home screen for fullscreen mobile experience
   * Offline cache fallback
 * Fastboot Rehydration
