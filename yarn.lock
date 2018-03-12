@@ -338,7 +338,7 @@ asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
 
-atob@^2.0.0:
+atob@^2.0.0, atob@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.0.3.tgz#19c7a760473774468f20b2d2d03372ad7d4cbf5d"
 
@@ -2338,7 +2338,7 @@ ember-cli-eslint@^4.2.1:
 
 ember-cli-fastboot@iezer/ember-cli-fastboot#rehydration+module-unification:
   version "1.1.2"
-  resolved "https://codeload.github.com/iezer/ember-cli-fastboot/tar.gz/90d4777d1ae20ed256794c4d703d69b0b5785245"
+  resolved "https://codeload.github.com/iezer/ember-cli-fastboot/tar.gz/05704be66ac465f4a6b8bde317bf35e0d5f03ef6"
   dependencies:
     broccoli-concat "^3.2.2"
     broccoli-funnel "^2.0.0"
@@ -2664,9 +2664,9 @@ ember-service-worker@^0.6.9:
     hash-for-dep "^1.0.2"
     rollup-plugin-replace "^1.1.1"
 
-"ember-source@https://s3.amazonaws.com/builds.emberjs.com/canary/shas/0b0765f270e23b221fded09bea876a940dfb23b2.tgz":
-  version "3.2.0-canary"
-  resolved "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/0b0765f270e23b221fded09bea876a940dfb23b2.tgz#fcff5ae39c3d6e8a8c6a50ab23f24bd42255467f"
+ember-source@./ember-source-3.2.0-master.tgz:
+  version "3.2.0-master"
+  resolved "./ember-source-3.2.0-master.tgz#2ccf1722b2774465a37a3cafdb4d926ccb8812e7"
   dependencies:
     broccoli-funnel "^2.0.1"
     broccoli-merge-trees "^2.0.0"
