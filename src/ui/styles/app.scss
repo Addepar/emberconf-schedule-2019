@@ -238,9 +238,23 @@ h2 {
 }
 
 .github {
+  padding: 1rem;
+  padding-left: calc(env(safe-area-inset-left) + 1rem);
+  padding-right: calc(env(safe-area-inset-right) + 1rem);
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: $github;
+  }
+
   svg {
     width: 2rem;
     height: 2rem;
-    fill: rgba($github, 0.7);
+    fill: $github;
+  }
+
+  strong {
+    display: block;
   }
 }
