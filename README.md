@@ -5,12 +5,16 @@
 ## Features
 
 * [Progressive Web App](https://madhatted.com/2017/6/16/building-a-progressive-web-app-with-ember)
-  * Perfect 100 Lighthouse score
-  * Save to home screen for fullscreen mobile experience
+  * Perfect 💯 Lighthouse score
+  * Save to mobile home screen for fullscreen app experience
   * Offline cache fallback via service worker
+* [Module Unification](https://github.com/emberjs/rfcs/blob/master/text/0143-module-unification.md) File Layout
+  * File system migrated with [ember-module-migrator](https://github.com/rwjblue/ember-module-migrator)
+  * Review the project's file structure organized within `src` directory rather than `app`
+  * Uses local component lookup (components found in context-aware `-component` directories)
 * Fastboot Rehydration
-* Module Unification
-* [WASM](http://schedule-wasm.emberconf.com)
+* [Separate WASM Version](https://schedule-wasm.emberconf.com) Also Available
+  * Deployed separately because Mobile Safari has temporarily dropped WASM support ☹️
 
 ## Prerequisites
 
