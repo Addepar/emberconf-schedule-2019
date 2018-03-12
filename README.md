@@ -10,7 +10,7 @@
   * Offline cache fallback via service worker
 * Fastboot Rehydration
 * Module Unification
-* [WASM](https://emberconf-schedule-2018-wasm.herokuapp.com/)
+* [WASM](http://schedule-wasm.emberconf.com)
 
 ## Prerequisites
 
