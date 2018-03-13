@@ -2,6 +2,8 @@
 
 [![TravisCi](https://travis-ci.org/201-created/emberconf-schedule-2018.svg?branch=master)](https://travis-ci.org/201-created/emberconf-schedule-2018)
 
+_This tech demo is brought to you via the EmberConf sponsorship from 201 Created. Like this demo project and want to explore these cutting edge features with your own codebase? 201 Created has worked on dozens of apps with Fortune 50 companies and Y-combinator startups. Visit [201-created.com](https://www.201-created.com/) or email [hello@201-created.com](mailto:hello@201-created.com) to talk with us._
+
 ## Features
 
 * [Progressive Web App](https://madhatted.com/2017/6/16/building-a-progressive-web-app-with-ember)
