@@ -16,7 +16,7 @@ _This tech demo is brought to you via the EmberConf sponsorship from 201 Created
   * Review the project's file structure organized within `src` directory rather than `app`
   * Uses local component lookup (components found in context-aware `-component` directories)
 
-  Be sure to watch "Who Moved My Cheese" by Mathew Beale at EmberConf at 3:00 to see more about this feature.
+  Be sure to watch "Who Moved My Cheese" by Mathew Beale at EmberConf on 3/13 at 3:00 to see more about this feature.
 
 * [Fastboot Rehydration](https://github.com/glimmerjs/glimmer-vm/commit/316805b9175e01698120b9566ec51c88d075026a)
 
@@ -42,6 +42,8 @@ _This tech demo is brought to you via the EmberConf sponsorship from 201 Created
   eventually become 3.2.  In 3.2 of Ember.js es5 getters are automatically
   installed for computed properties onto the Object prototype.  So you can use
   `this.myComputedProperty` without reaching for the `get` helper
+
+* No jQuery!
 
 ## Prerequisites
 
