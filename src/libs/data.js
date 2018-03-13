@@ -9,7 +9,8 @@ export default [
         "speakers": [
           "Yehuda Katz",
           "Tom Dale"
-        ]
+        ],
+        "description": "Join Tom and Yehuda for a review of Ember in 2017 and a look forward to the future."
       },
       {
         "name": "Ambitious for All: Accessibility in Ember",
