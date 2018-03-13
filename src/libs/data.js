@@ -36,22 +36,22 @@ export default [
         "end": "2018-03-13T13:30:00-07:00"
       },
       {
-        "name": "Say More",
+        "name": "The Next Generation of Testing",
         "start": "2018-03-13T13:30:00-07:00",
         "end": "2018-03-13T14:00:00-07:00",
-        "speakers": [
-          "Jamie White"
-        ],
-        "description": "Acceptance tests are a wonderful way to describe how our apps behave at a high level, but what if they could say more? What if they could also say that our apps are intuitive, accessible, localised, and fast? What if they could say all this without any extra code?\n\nIn this talk we’ll imagine a set of hooks which allow us to build new layers of meaning into the test helpers we know and love. Then we’ll set about actually building them."
-      },
-      {
-        "name": "The Next Generation of Testing",
-        "start": "2018-03-13T14:15:00-07:00",
-        "end": "2018-03-13T14:45:00-07:00",
         "speakers": [
           "Tobias Bieniek"
         ],
         "description": "The \"Grand Testing Unification\" is finally here! In this talk you learn how to use the new QUnit testing APIs and we discuss why they were changed and what steps you need to take to migrate your existing tests to the new APIs. Finally we will look at the Ember ecosystem and introduce addons that can make your tests better than ever before."
+      },
+      {
+        "name": "Say More",
+        "start": "2018-03-13T14:15:00-07:00",
+        "end": "2018-03-13T14:45:00-07:00",
+        "speakers": [
+          "Jamie White"
+        ],
+        "description": "Acceptance tests are a wonderful way to describe how our apps behave at a high level, but what if they could say more? What if they could also say that our apps are intuitive, accessible, localised, and fast? What if they could say all this without any extra code?\n\nIn this talk we’ll imagine a set of hooks which allow us to build new layers of meaning into the test helpers we know and love. Then we’ll set about actually building them."
       },
       {
         "name": "Who Moved My Cheese? Ember's New Filesystem Layout",
