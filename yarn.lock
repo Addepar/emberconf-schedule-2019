@@ -2666,7 +2666,7 @@ ember-service-worker@^0.6.9:
 
 ember-source@./ember-source-3.2.0-master.tgz:
   version "3.2.0-master"
-  resolved "./ember-source-3.2.0-master.tgz#2ccf1722b2774465a37a3cafdb4d926ccb8812e7"
+  resolved "./ember-source-3.2.0-master.tgz#25d7e802a9636f87316d1fd3d0639fda9cef1083"
   dependencies:
     broccoli-funnel "^2.0.1"
     broccoli-merge-trees "^2.0.0"
