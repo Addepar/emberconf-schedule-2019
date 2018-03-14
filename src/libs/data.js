@@ -196,7 +196,12 @@ export default [
             "speaker": "Christina Kung"
           },
           {
-            "time": "4:20-4:30pm",
+            "time": "4:20—4:25pm",
+            "title": "Ember-Cli Addons",
+            "speaker": "Sam Selikoff"
+          },
+          {
+            "time": "4:25-4:30pm",
             "title": "Let Me Ember This for You",
             "speaker": "Serena Fritsch"
           }
