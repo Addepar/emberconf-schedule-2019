@@ -196,7 +196,7 @@ export default [
             "speaker": "Christina Kung"
           },
           {
-            "time": "4:20—4:25pm",
+            "time": "4:20-4:25pm",
             "title": "Ember-Cli Addons",
             "speaker": "Sam Selikoff"
           },

@@ -94,8 +94,8 @@ end
 def parsed_event_sessions(sessions_data)
   sessions_data.map do |session|
     {
-      time: session["time"],
-      title: (session["title"] == session["title"].upcase) ? session["title"] : session["title"].titleize,
+      time: session["time"].gsub(/—/, '-'),
+      title: session["title"].titleize,
       speaker: session["speaker"]
     }
   end
