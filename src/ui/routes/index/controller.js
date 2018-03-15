@@ -31,6 +31,7 @@ export default Controller.extend({
 
   init() {
     this._super(...arguments);
-    this._setNow();
+    // Commented out post-conference
+    // this._setNow();
   }
 });
