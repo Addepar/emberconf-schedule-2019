@@ -1,0 +1,9 @@
+{
+  "name": "wasm-to-asm",
+  "keywords": [
+    "ember-addon"
+  ],
+  "ember-addon": {
+    "after": "ember-source"
+  }
+}

@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>EmberConf 2018</title>
-    <meta name="description" content="Mobile-friendly PWA for viewing the 2018 EmberConf schedule">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    {{content-for "head"}}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>EmberConf 2018</title>
+  <meta name="description" content="Mobile-friendly PWA for viewing the 2018 EmberConf schedule">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"> {{content-for "head"}}
 
-    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/emberconf.css">
+  <link integrity="" rel="stylesheet" href="{{rootURL}}assets/emberconf.css"> {{content-for "head-footer"}}
+</head>
 
-    {{content-for "head-footer"}}
-  </head>
-  <body>
-    {{content-for "body"}}
+<body>
+  {{content-for "body"}}
 
-    <script src="{{rootURL}}assets/vendor.js"></script>
-    <script src="{{rootURL}}assets/emberconf.js"></script>
+  <script src="{{rootURL}}assets/vendor.js"></script>
+  <script src="{{rootURL}}rust_bg.js"></script>
+  <script src="{{rootURL}}init_asm.js"></script>
+  <script src="{{rootURL}}assets/emberconf.js"></script> {{content-for "body-footer"}}
+</body>
 
-    {{content-for "body-footer"}}
-  </body>
 </html>

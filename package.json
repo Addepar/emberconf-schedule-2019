@@ -54,5 +54,10 @@
   },
   "fastbootDependencies": [
     "atob"
-  ]
+  ],
+  "ember-addon": {
+    "paths": [
+      "lib/wasm-to-asm"
+    ]
+  }
 }
