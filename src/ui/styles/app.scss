@@ -190,7 +190,7 @@ h2 {
     margin-bottom: 0;
     padding-left: 1rem;
 
-    li {
+    > li {
       padding: 0.25rem 0;
       border-bottom: solid 1px rgba($description, 0.3);
 
@@ -201,7 +201,7 @@ h2 {
       h4 {
         margin: 0;
       }
-      p {
+      ul.speakers li {
         color: rgba($description, 0.7);
       }
 

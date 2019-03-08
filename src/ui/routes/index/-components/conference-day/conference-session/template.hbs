@@ -20,7 +20,11 @@
           <li>
             <small>{{minitalk.time}}</small>
             <h4>{{minitalk.title}}</h4>
-            <p>{{minitalk.speaker}}</p>
+            <ul class="speakers">
+              {{#each minitalk.speakers as |speaker|}}
+                <li>{{speaker}}</li>
+              {{/each}}
+            </ul>
           </li>
         {{/each}}
       </ul>

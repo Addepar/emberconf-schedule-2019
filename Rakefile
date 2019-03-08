@@ -9,15 +9,16 @@ require "date"
 desc "Import session data"
 task :default do
 
-  schedule_uri = "https://raw.githubusercontent.com/tildeio/emberconf-2018/master/data/schedule.yml?token=AAPUNn3MvpvTv6oMeijjXR-_qP81yVzjks5arAexwA%3D%3D"
+  schedule_uri = "https://raw.githubusercontent.com/tildeio/emberconf-2019/master/data/content.yml?token=AAPUNuyeh4MdZZQteGWqPFZ-y1ub4zh5ks5cjBc9wA%3D%3D"
   data_lib = "src/libs/data.js";
 
-  schedule_data = load_remote_yaml(schedule_uri)
+  content_data = load_remote_yaml(schedule_uri)
 
-  if schedule_data[404]
+  if content_data[404]
     puts red_output("The URL to the Yaml Schedule needs to be updated")
   else
 
+    schedule_data = content_data["schedule"]
     parsed_data = parsed_days(schedule_data)
 
     open(data_lib, "w+") do |f|
@@ -60,7 +61,7 @@ def parsed_day(day_data)
 end
 
 def parsed_events(events_data, date)
-  filtered_events_data = events_data.select { |event| event["name"] != "Registration" }
+  filtered_events_data = events_data.select { |event| event["name"] != "Registration" && !event["addon"] }
   filtered_events_data.map do |event_data|
     parsed_event(event_data, date)
   end
@@ -74,7 +75,7 @@ def parsed_event(event_data, date)
   }
 
   event["speakers"] = parsed_speakers(event_data["speakers"]) if event_data["speakers"]
-  event["description"] = event_data["description"].delete('>').strip if event_data["description"]
+  event["description"] = event_data["description"].gsub(%r{</?[^>]+?>}, '').delete("`").strip if event_data["description"]
   event["sessions"] = parsed_event_sessions(event_data["sessions"]) if event_data["sessions"]
 
   event
@@ -96,7 +97,7 @@ def parsed_event_sessions(sessions_data)
     {
       time: session["time"].gsub(/—/, '-'),
       title: session["title"].titleize,
-      speaker: session["speaker"]
+      speakers: parsed_speakers(session["speakers"])
     }
   end
 end

@@ -1,228 +1,253 @@
 export default [
   {
-    "date": "2018-03-13",
+    "date": "2019-03-19",
     "sessions": [
       {
         "name": "Opening Keynote",
-        "start": "2018-03-13T09:30:00-07:00",
-        "end": "2018-03-13T10:30:00-07:00",
+        "start": "2019-03-19T09:30:00-07:00",
+        "end": "2019-03-19T10:30:00-07:00",
         "speakers": [
           "Yehuda Katz",
           "Tom Dale"
         ],
-        "description": "Join Tom and Yehuda for a review of Ember in 2017 and a look forward to the future."
+        "description": "Join Tom and Yehuda for a review of Ember in 2018/2019 and a look forward to the future."
       },
       {
-        "name": "Ambitious for All: Accessibility in Ember",
-        "start": "2018-03-13T10:45:00-07:00",
-        "end": "2018-03-13T11:15:00-07:00",
+        "name": "Building a UI Styleguide in Ember",
+        "start": "2019-03-19T10:45:00-07:00",
+        "end": "2019-03-19T11:15:00-07:00",
         "speakers": [
-          "Melanie Sumner"
+          "Frédéric Soumaré"
         ],
-        "description": "Ember is \"the framework for building ambitious applications.\" But what happens when that ambition leaves some users behind? For many in the enterprise environment, accessibility is a legal requirement. For anyone building a new app *elsewhere*, the user data speaks for itself: nearly 10% of all users have some sort of a disability. So how can we make this easier? What already exists?\n\nNot only will we discuss how Ember supports this, we'll look at some imaging techniques being used in scientific research that may help us look at this challenge from a different angle."
+        "description": "How big should we make our buttons? What’s the colour code of our logo? How do we display error states on our forms?\n\nDid you know that Ember-CLI’s powerful addon system can be used to build a kit of reusable UI components? In this talk, you will learn how to build your own styleguide addon and how to use it to keep your UI consistent across apps."
       },
       {
-        "name": "Everything They Didn’t Tell You About the Ember Community",
-        "start": "2018-03-13T11:30:00-07:00",
-        "end": "2018-03-13T12:00:00-07:00",
+        "name": "Your Desktop, the Studio",
+        "start": "2019-03-19T11:30:00-07:00",
+        "end": "2019-03-19T12:00:00-07:00",
         "speakers": [
-          "Jessica Jordan"
+          "Kate Ruggeri"
         ],
-        "description": "The Ember community describes a worldwide subculture consisting of developers, contributors, bloggers, event organizers, podcasters and many others involved in activities around the framework. But which factors drive this complex community in its efforts?\n\nAfter a retrospective of open-source activity in the ecosystem, we’ll see which core resources and addons are particularly popular and which topics are particularly interesting to the community. Summing up these findings, we’ll finally try to answer how diversity and growth of this community can be furthered even more in the future."
+        "description": "Taking the time to make your computer your happy place, is a win for everybody. If you're not feeling a sense of calm and control after boot up, you might need some work. There are ways to encourage setup, share tools and successes, and question what we're accustomed to and already know.\n\nThis tactical talk will help with practical tips, tricks and anecdotes to optimize your environment and keep you in your happy place, all work-day long."
       },
       {
         "name": "Lunch",
-        "start": "2018-03-13T12:00:00-07:00",
-        "end": "2018-03-13T13:30:00-07:00"
+        "start": "2019-03-19T12:00:00-07:00",
+        "end": "2019-03-19T13:30:00-07:00"
       },
       {
-        "name": "The Next Generation of Testing",
-        "start": "2018-03-13T13:30:00-07:00",
-        "end": "2018-03-13T14:00:00-07:00",
+        "name": "Comparing Patterns in React and Ember",
+        "start": "2019-03-19T13:30:00-07:00",
+        "end": "2019-03-19T14:00:00-07:00",
         "speakers": [
-          "Tobias Bieniek"
+          "Preston Sego"
         ],
-        "description": "The \"Grand Testing Unification\" is finally here! In this talk you learn how to use the new QUnit testing APIs and we discuss why they were changed and what steps you need to take to migrate your existing tests to the new APIs. Finally we will look at the Ember ecosystem and introduce addons that can make your tests better than ever before."
+        "description": "React is a popular library for aiding in the building of single page apps -- but how do apps built with React compare with apps built with Ember?\n\nIn this talk we'll talk through real-world experiences using both, to give audience members a better understanding of the key differences and tradeoffs when choosing between React-based apps and ember apps."
       },
       {
-        "name": "Say More",
-        "start": "2018-03-13T14:15:00-07:00",
-        "end": "2018-03-13T14:45:00-07:00",
+        "name": "Typed Ember: Strong Types for Better Apps",
+        "start": "2019-03-19T14:15:00-07:00",
+        "end": "2019-03-19T14:45:00-07:00",
         "speakers": [
-          "Jamie White"
+          "James C. Davis"
         ],
-        "description": "Acceptance tests are a wonderful way to describe how our apps behave at a high level, but what if they could say more? What if they could also say that our apps are intuitive, accessible, localised, and fast? What if they could say all this without any extra code?\n\nIn this talk we’ll imagine a set of hooks which allow us to build new layers of meaning into the test helpers we know and love. Then we’ll set about actually building them."
+        "description": "Have you been curious about TypeScript, but not sure if it’s for you? Are you unconvinced of its advantages? Did you even know you could use TypeScript with Ember? If you answered yes to any of those questions (and even/especially if you didn’t) then this talk is for you!\n\nInstead of a deep dive into using TypeScript with Ember, this talk will demonstrate everyday usage. We'll work to prove that switching to TypeScript to build your Ember apps and addons will make them more robust and maintainable, provide a better developer experience, and lead to improved productivity."
       },
       {
-        "name": "Who Moved My Cheese? Ember's New Filesystem Layout",
-        "start": "2018-03-13T15:00:00-07:00",
-        "end": "2018-03-13T15:30:00-07:00",
+        "name": "Crafting Web Comics With Ember",
+        "start": "2019-03-19T15:00:00-07:00",
+        "end": "2019-03-19T15:30:00-07:00",
         "speakers": [
-          "Matthew Beale"
+          "Jessica Jordan"
         ],
-        "description": "Ember's new filesystem layout, commonly called Module Unification, has arrived. Applications and addons alike have started to adopt the new convention. Why should you be looking at Module Unification? With the new layout we're bringing code bundling, improved namespacing for components, and a better integration path for addons to the framework."
+        "description": "Are you a fan of comics or have you ever dreamed of becoming a comic artist yourself? Then this talk is just for you! At EmberConf, you ask? But of course!\n\nWe'll explore how both recent and matured Web APIs can be leveraged to tell our own, rich and interactive stories on the web. We’ll also dive into how you can use Ember.js to help create an online comic book that makes any comic art fan’s heart leap for joy."
       },
       {
         "name": "Snack Break",
-        "start": "2018-03-13T15:30:00-07:00",
-        "end": "2018-03-13T16:00:00-07:00"
+        "start": "2019-03-19T15:30:00-07:00",
+        "end": "2019-03-19T16:00:00-07:00"
       },
       {
-        "name": "Mastering the Art of Forms",
-        "start": "2018-03-13T16:00:00-07:00",
-        "end": "2018-03-13T16:30:00-07:00",
+        "name": "Anatomy of an Addon Ecosystem",
+        "start": "2019-03-19T16:00:00-07:00",
+        "end": "2019-03-19T16:30:00-07:00",
         "speakers": [
-          "Danielle Adams"
+          "Lisa Backer"
         ],
-        "description": "\"Building forms in @emberjs is terrifying because I'm stuck with decisions I always later regret.\"\n—me in another lifetime\n\nHTML forms can represent a time before JavaScript was an integral part of application development. Creating forms isn’t always the most exciting part of development and, at times, it may seem daunting. Fear not! I’d like to talk through some pain points of building an important piece of user interface: we will discuss what to do, what not to do, and which Ember addons have come to the rescue."
+        "description": "How do plugin-style addons actually work? Many of us have reaped the benefits of an Ember addon plugin approach, like with ember-service-worker and ember-cli-deploy.\n\nThese ecosystems utilize the build process to enable a plugin architecture requiring only configuration to implement powerful capabilities. But how, you ask?\n\nWe’ll do a technical deep dive into the mechanics of how the ember-service-worker ecosystem utilizes plugins. Along the way we’ll investigate the addon lifecycle and broccoli customizations. Finally we’ll touch on the unique problems of testing such addons."
       },
       {
-        "name": "How to Build a Bonfire: On Training and Hiring New Devs",
-        "start": "2018-03-13T16:45:00-07:00",
-        "end": "2018-03-13T17:15:00-07:00",
+        "name": "Developing an Ember Test Strategy",
+        "start": "2019-03-19T16:45:00-07:00",
+        "end": "2019-03-19T17:15:00-07:00",
         "speakers": [
-          "Taylor Jones"
+          "Todd Jordan"
         ],
-        "description": "Many companies that integrate Ember into their stacks often have a hard time finding quality developers in an ever-changing job market. Because of this, we often resort to training new developers in-house on the ways of Ember and Glimmer. Yet, what is the most effective way for us to hire, teach, and train developers in this aspect? I want to offer some practical advice, stories, and lessons learned from my experience with this over the past few years."
+        "description": "Taking lessons from the classic writings on Software Testing, mostly pre-JavaScript, we'll walk through what are industry tried and true approaches for developing a robust and effective test suite.\n\nMany of the Testing philosophies and strategies today have their origins as far back as the 60's, and really got their legs during the advent of \"Extreme Programming\" and other early \"Agile\" methodologies from the 1990s.\n\nIn this talk we'll take many of these tried and true test strategies and show how one would apply them in a real way to an Ember project."
       },
       {
-        "name": "Living Animation",
-        "start": "2018-03-13T17:30:00-07:00",
-        "end": "2018-03-13T18:00:00-07:00",
+        "name": "Don't Break the Web",
+        "start": "2019-03-19T17:30:00-07:00",
+        "end": "2019-03-19T18:00:00-07:00",
         "speakers": [
-          "Edward Faulkner"
+          "Melanie Sumner"
         ],
-        "description": "Most animation on the web is canned, non-interactive, and inflexible. It doesn’t dynamically adjust itself to changing conditions and user interactions. It’s expensive to create and maintain because the programmer or designer is trying to micromanage the motion. It needs to be hand-tuned for each new feature, device, or media query breakpoint.\n\nThere is an alternative: we can think more like game designers. We can build robust, dynamic systems that animate gracefully, with clear separation between app logic and app motion."
+        "description": "While JavaScript frameworks saved developers from tedium, they have also been notorious for completely disregarding accessibility. This talk will explore how this is different with Ember.js due to purposeful efforts, and how JS engineers can shift their mindset (just a little!) to make the apps we build more accessible for people with disabilities."
       },
       {
         "name": "Happy Hour!",
-        "start": "2018-03-13T18:00:00-07:00",
-        "end": "2018-03-13T19:00:00-07:00",
+        "start": "2019-03-19T18:00:00-07:00",
+        "end": "2019-03-19T19:00:00-07:00",
         "description": "Join us in the main sponsor hall and cap off the day with friends, drinks and snacks before you head off to dinner."
       }
     ]
   },
   {
-    "date": "2018-03-14",
+    "date": "2019-03-20",
     "sessions": [
       {
-        "name": "The Future of Data in Ember",
-        "start": "2018-03-14T09:45:00-07:00",
-        "end": "2018-03-14T10:30:00-07:00",
+        "name": "Dealing With Data in 2019",
+        "start": "2019-03-20T09:30:00-07:00",
+        "end": "2019-03-20T10:00:00-07:00",
         "speakers": [
-          "Dan Gebhardt"
+          "Igor Terzic"
         ],
-        "description": "This talk will provide an overview of the latest developments in the realm of managing data in Ember applications. The focus will be the past, present, and future of Ember Data, which is becoming faster, lighter-weight, and more modular.\n\nThe JSON:API specification, which provides the conventions that underpin Ember Data, is evolving through “operations” and other extensions. And new interfaces are being explored in Ember Data to allow interop with Orbit.js, which will unlock capabilities such as offline operation, store forking / merging, and more.\n\nThis talk will also touch upon some popular data management solutions in the wider JavaScript ecosystem, both to show how they can be used in Ember applications and to compare and contrast them with Ember’s conventional data stack."
+        "description": "For the last year Ember Data has been shedding weight, deprecating obsolete APIs and becoming more modular and flexible. We've removed layers of cruft and enabled much nicer testing infrastructure, easier integrations with more challenging backend systems and massively reduced dependency on the Ember Object model.\n\nThis talk will walk through a modern cruftless data experience in Ember and demonstrate how you can use Ember Data's modular approach to create compelling experiences in even the most challenging data domains."
       },
       {
-        "name": "Smartphone Symphony",
-        "start": "2018-03-14T10:45:00-07:00",
-        "end": "2018-03-14T11:15:00-07:00",
+        "name": "The State of Community Documentation",
+        "start": "2019-03-20T10:00:00-07:00",
+        "end": "2019-03-20T10:30:00-07:00",
         "speakers": [
-          "Gavin Joyce"
+          "Kenneth Larsen"
         ],
-        "description": "If Beethoven was alive today, he’d probably use Ember. Using Ember, socket.io, the web audio API, and devices in the audience's pockets, we'll interactively explore the challenges of creating a real-time and audience-driven musical performance, different parts of which are played across a symphony of all phones in the audience."
+        "description": "Ember takes pride in having great documentation. So much that we even have a Learning Team dedicated to keeping the official documentation in a good state.\n\nBut what is the actual state of community documentation?\n\nAfter scraping and analysing just about 5000 readme files from Ember addons created by the community, I’ll present common pitfalls and ways to improve our community documentation."
       },
       {
-        "name": "Reuse, Recycle: One Team’s Journey From Projects to Products",
-        "start": "2018-03-14T11:30:00-07:00",
-        "end": "2018-03-14T12:00:00-07:00",
+        "name": "Communication and Convention",
+        "start": "2019-03-20T10:45:00-07:00",
+        "end": "2019-03-20T11:15:00-07:00",
         "speakers": [
-          "Sarah Bostwick"
+          "Julia Donaldson"
         ],
-        "description": "When building app after app at what point do you stop mining your past projects to quickly prototype and commit to maintaining a configurable product? This is a story of building a successful digital agency in a sea of tech startups by figuring out how to transition from one-off Ember SPAs to maintaining reusable products."
+        "description": "Ember is touted as the “framework for ambitious web developers,” but what does that really mean? How do we respond to critics who would argue that Ember’s “learning curve” negates the productivity it promises?\n\nThis talk explores how Ember's conventions democratize the language we use to describe our applications, enabling developers of all levels and backgrounds to communicate in a meaningful and productive way. Ember is a tool that makes it easier to be a better, more ambitious developer, to communicate new ideas faster, and to facilitate a culture of cascading mentorship and growth within teams."
+      },
+      {
+        "name": "Ember Is for Everyone",
+        "start": "2019-03-20T11:30:00-07:00",
+        "end": "2019-03-20T12:00:00-07:00",
+        "speakers": [
+          "Kenigbolo Meya Stephen"
+        ],
+        "description": "Teaching absolute beginners with no technical experience to understand Javascript can be quite a daunting task. It's more challenging if you have a thick British accent and your students are mostly African students. If you've ever designed a tech curriculum then you understand how complicated this can be.\n\nAt code Afrique, where we help the community by offering a free weekend intensive bootcamp, we explored and have now achieved success with ember where we had earlier failed. The aim of this talk is to show, what we tried, where we failed and how ember brought us success like no other."
       },
       {
         "name": "Lunch",
-        "start": "2018-03-14T12:00:00-07:00",
-        "end": "2018-03-14T13:30:00-07:00"
+        "start": "2019-03-20T12:00:00-07:00",
+        "end": "2019-03-20T13:30:00-07:00"
       },
       {
-        "name": "Deep Dive on Ember Events",
-        "start": "2018-03-14T13:30:00-07:00",
-        "end": "2018-03-14T14:00:00-07:00",
+        "name": "Building Better Components",
+        "start": "2019-03-20T13:30:00-07:00",
+        "end": "2019-03-20T14:00:00-07:00",
         "speakers": [
-          "Marie Chatfield"
+          "Dianne Eramo"
         ],
-        "description": "Advance your Ember events knowledge from entry-level to expert in 30 minutes! Start with the basics of DOM events, learn the lifecycle of event listeners in Ember, then peek under the hood to understand how Ember handles clicks in your application. What are the different ways of listening for events in Ember? How do they interact? What are the performance implications of each approach? What kind of bugs can you introduce if you don't understand them?\n\nYou'll be able to implement event listeners with confidence and debug with clarity once you have a complete mental model of Ember events!"
+        "description": "Components are such a large part of Ember apps, and they can do everything from displaying a post to loading data for a form. But the freedom that comes with this flexibility can also make it difficult to know if a particular approach will make your components a dream to work with, or leave you tearing your hair out.\n\nWhen creating a new component, you might ask yourself what data needs to be exposed, what kind of side effects it will have, or whether you need it to be generic and reusable or for one specific purpose. We'll explore these questions and more to help you build better components."
       },
       {
-        "name": "Building a Memex in Ember",
-        "start": "2018-03-14T14:15:00-07:00",
-        "end": "2018-03-14T14:45:00-07:00",
+        "name": "Composable Concurrency Tasks",
+        "start": "2019-03-20T14:15:00-07:00",
+        "end": "2019-03-20T14:45:00-07:00",
         "speakers": [
-          "Andrew Louis"
+          "Isaac Ezer"
         ],
-        "description": "In 1945, the Memex was proposed as the ultimate personal library. In addition to storing information, users could navigate, organize, link, and share data with others.\n\nTragically, zero of these devices were ever produced, but 72 years later, I’ve build my own Memex in Ember. I’ve created dozens of importers for different services, organized the 10M+ data points into a graph schema, and built a frontend with Ember. Almost all aspects of my personal history is available through this app.\n\nI’ll go over the history of the Memex, how I used Ember to build my own, and demo what I can do with it."
+        "description": "Ember users have fallen in love with Ember Concurrency. It uses ES6 generators to elegantly solve a large class of async programming challenges that is common to all JavaScript apps. It makes code more concise, has an elegant API, requests can be canceled if they’re no longer needed, and no more \"isDestroyed\" checks.\n\nLet's do a deep dive into the inner workings of Ember Concurrency. We’ll learn how to build our own abstractions that encapsulate complex tasks for reuse in our apps. We’ll build composable, higher-order tasks that put more power into the hands of you and your fellow developers."
       },
       {
-        "name": "Prying Open the Black Box",
-        "start": "2018-03-14T15:00:00-07:00",
-        "end": "2018-03-14T15:30:00-07:00",
+        "name": "New to Ember: What ARE All These Things?",
+        "start": "2019-03-20T15:00:00-07:00",
+        "end": "2019-03-20T15:30:00-07:00",
         "speakers": [
-          "Godfrey Chan"
+          "Jennifer Wong"
         ],
-        "description": "When your code doesn't work the way you expect, it could be a frustrating exercise to figure out what exactly went wrong. In this session, we will walk through the process of debugging an Ember app. Along the way, we will learn about some of the tools and techniques that could help shed light on the behavior of our code. Finally, we will also take a brief tour into the Ember codebase to look for clues.\n\nUpon completing this orientation, you will be well-equipped to pry open the mysterious black box the next time your app misbehaves!"
+        "description": "New to Ember? So am I! What are all these things? A new code base often means unfamiliar words and paradigms. I definitely had my share in this Ember new world. When I saw mut, I thought of adorable dogs. When I saw can I thought of soup.\n\nEventually, I realized the mystery words are part of Ember addons! But with so many to learn, I was quickly overwhelmed. Let me walk you through my exploration of addons. How do you balance code time with addon learning time? From ember-a11y-testing to zoey, we’ll dig into Ember & its addons, and strategies for persistent, sustained learning anyone can rely on"
       },
       {
         "name": "Snack Break",
-        "start": "2018-03-14T15:30:00-07:00",
-        "end": "2018-03-14T16:00:00-07:00"
+        "start": "2019-03-20T15:30:00-07:00",
+        "end": "2019-03-20T16:00:00-07:00"
       },
       {
         "name": "MiniTalks",
-        "start": "2018-03-14T16:00:00-07:00",
-        "end": "2018-03-14T16:30:00-07:00",
+        "start": "2019-03-20T16:00:00-07:00",
+        "end": "2019-03-20T16:30:00-07:00",
+        "speakers": [
+          "Vaidehi Joshi",
+          "Danielle Adams"
+        ],
         "description": "Lightning talks are pretty great, but less so when you can tell how little prep time the speaker had. So we wanted the good parts, without the bad. Enter: MiniTalks! They're like Lightning talks, short and sweet, but our speakers have more notice so they can put more work and polish into their talks.",
         "sessions": [
           {
             "time": "4:00-4:05pm",
             "title": "Introductions and Preamble",
-            "speaker": "Leah Silber"
+            "speakers": [
+              "Vaidehi Joshi",
+              "Danielle Adams"
+            ]
           },
           {
             "time": "4:05-4:10pm",
-            "title": "Contributor Rally",
-            "speaker": "Sean Massa"
+            "title": "How I Learned to Stop Worrying and Love the Mono Repo",
+            "speakers": [
+              "Hassan Abdel-Rahman"
+            ]
           },
           {
             "time": "4:10-4:15pm",
-            "title": "Toyota's Shared Component Library",
-            "speaker": "Tony Ward"
+            "title": "From Mainframe to Mainstream: A Case Study in Emberification",
+            "speakers": [
+              "Ryan Mark"
+            ]
           },
           {
             "time": "4:15-4:20pm",
-            "title": "Lighting Thoughts on Lighting Deploy",
-            "speaker": "Christina Kung"
+            "title": "How to Build a Blog Engine in 15m With Ember and NodeJS",
+            "speakers": [
+              "Chris Manson"
+            ]
           },
           {
             "time": "4:20-4:25pm",
-            "title": "Ember-Cli Addons",
-            "speaker": "Sam Selikoff"
+            "title": "What's Behind Ember Observer's Scores?",
+            "speakers": [
+              "Katie Gengler"
+            ]
           },
           {
             "time": "4:25-4:30pm",
-            "title": "Let Me Ember This for You",
-            "speaker": "Serena Fritsch"
+            "title": "Broccoli Update",
+            "speakers": [
+              "Oli Griffiths"
+            ]
           }
         ]
       },
       {
-        "name": "Creating Fluid App-Like Experiences With Ember",
-        "start": "2018-03-14T16:45:00-07:00",
-        "end": "2018-03-14T17:15:00-07:00",
+        "name": "No Bad Legos: A Toy Box for Everybody",
+        "start": "2019-03-20T16:45:00-07:00",
+        "end": "2019-03-20T17:15:00-07:00",
         "speakers": [
-          "Nick Schot"
+          "Howie Bollinger"
         ],
-        "description": "Mobile apps have UI patterns and features not often found in (mobile) web applications. We will take an in-depth look at ways to enhance user interaction for responsive Ember applications without having to develop a completely separate application.\n\nTopics include application organization, templating concerns, interaction patterns, relevant addons and a display of newly built Ember addons to fill in for missing interaction features."
+        "description": "People often like to think of a piece of software as greater than the some of its parts. But what if the individual parts are garbage? Using component driven development, we can make sure the building blocks of our applications are robust, reusable, and tested. When we break development down in this manner, we can give each individual component the attention it needs in regards to accessibility."
       },
       {
         "name": "Closing Keynote",
-        "start": "2018-03-14T17:30:00-07:00",
-        "end": "2018-03-14T18:15:00-07:00",
+        "start": "2019-03-20T17:30:00-07:00",
+        "end": "2019-03-20T18:15:00-07:00",
         "speakers": [
-          "Saron Yitbarek",
-          "Vaidehi Joshi"
+          "Sarah Allen"
         ]
       }
     ]
