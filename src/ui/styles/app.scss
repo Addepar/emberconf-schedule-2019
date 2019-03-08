@@ -1,11 +1,11 @@
 // Colors
-$background: #e8edf1;
-$header: #001d36;
+$background: #f6f4f0;
+$header: linear-gradient(45deg, rgba(28,98,149,0.75), rgba(52,31,121,0)), linear-gradient(0deg, #812849, #410e3d);
+$text: #2e262d;
 $session: white;
-$description: #40586e;
+$description: rgba(46,38,45,0.85);
 $ember: #e15d44;
 $github: #24292e;
-$footer-link: #ffbf5e;
 
 html {
   line-height: 1.15;
@@ -15,7 +15,7 @@ html {
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: $header;
+  color: $text;
   background: $background;
 }
 
@@ -30,7 +30,7 @@ header {
   padding-top: calc(env(safe-area-inset-top) + 0.5rem);
   padding-left: calc(env(safe-area-inset-left) + 1rem);
   padding-right: calc(env(safe-area-inset-right) + 1rem);
-  background: $header;
+  background-image: $header;
 
   a {
     display: block;
