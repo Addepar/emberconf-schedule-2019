@@ -16,7 +16,7 @@ export default Controller.extend({
     if (ENV.APP.shouldForceDayOne) {
       // Use conf Day 1 for development
       let time = moment().utcOffset(ENV.APP.UTC_OFFSET).format('HH:mm:ss');
-      this.set('now', moment(`2018-03-13T${time}${ENV.APP.UTC_OFFSET}`).format());
+      this.set('now', moment(`2019-03-19T${time}${ENV.APP.UTC_OFFSET}`).format());
     } else {
       // Use real date and time for non-dev environments
       this.set('now', moment().utcOffset(ENV.APP.UTC_OFFSET).format());
@@ -32,6 +32,6 @@ export default Controller.extend({
   init() {
     this._super(...arguments);
     // Commented out post-conference
-    // this._setNow();
+    this._setNow();
   }
 });

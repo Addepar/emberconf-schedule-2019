@@ -2,7 +2,7 @@
   "name": "emberconf",
   "version": "0.0.0",
   "private": true,
-  "description": "Mobile-friendly PWA for viewing the 2018 EmberConf schedule",
+  "description": "Mobile-friendly PWA for viewing the 2019 EmberConf schedule",
   "license": "MIT",
   "author": "201 Created, Inc.",
   "directories": {
@@ -29,7 +29,7 @@
     "ember-cli-htmlbars-inline-precompile": "^1.0.0",
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-qunit": "^4.3.2",
-    "ember-cli-sass": "^7.1.7",
+    "ember-cli-sass": "^10.0.0",
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^2.0.0",
     "ember-inline-css": "^0.0.10",
@@ -42,10 +42,11 @@
     "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/0b0765f270e23b221fded09bea876a940dfb23b2.tgz",
     "ember-web-app": "^2.3.0",
     "eslint-plugin-ember": "^5.1.0",
-    "loader.js": "^4.2.3"
+    "loader.js": "^4.2.3",
+    "sass": "^1.17.2"
   },
   "engines": {
-    "node": "^4.5 || 6.* || >= 7.*" ,
+    "node": "^4.5 || 6.* || >= 7.*",
     "npm": "4.6.1"
   },
   "dependencies": {
