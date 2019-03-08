@@ -8,7 +8,7 @@ module.exports = function(/* environment, appConfig */) {
   return {
     name: "EmberConf",
     short_name: "EmberConf",
-    description: "EmberConf 2018 Schedule",
+    description: "EmberConf 2019 Schedule",
     start_url: "/",
     display: "standalone",
     background_color: "#e8edf1",

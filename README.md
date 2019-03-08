@@ -1,4 +1,4 @@
-# EmberConf 2018 Schedule
+# EmberConf 2019 Schedule
 
 [![TravisCi](https://travis-ci.org/201-created/emberconf-schedule-2018.svg?branch=master)](https://travis-ci.org/201-created/emberconf-schedule-2018)
 
