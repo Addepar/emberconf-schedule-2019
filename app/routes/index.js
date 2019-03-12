@@ -1,21 +1,22 @@
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
-import Schedule from 'emberconf/src/libs/data';
-import SmoothScroll from 'emberconf/src/libs/smoothscroll';
+import Schedule from 'emberconf/libs/data';
+import SmoothScroll from 'emberconf/libs/smoothscroll';
+import { whenRoutePainted } from 'ember-app-scheduler';
 
 export default Route.extend({
   fastboot: service(),
-  scheduler: service(),
 
   model() {
     return Schedule;
   },
 
-  afterModel() {
+  activate() {
+    this._super(...arguments);
     if (this.get('fastboot.isFastBoot')) { return; }
 
     // Scroll to current/upcoming sessions
-    this.scheduler.scheduleWork('afterContentPaint', () => {
+    whenRoutePainted().then(() => {
       SmoothScroll.polyfill();
       let header = document.querySelector('header');
       let pastSessions = document.getElementsByClassName('is-past');
@@ -24,6 +25,6 @@ export default Route.extend({
         let topScrollSession = (header.offsetHeight > pastSession.offsetHeight) ? pastSessions[pastSessions.length-2] : pastSession;
         topScrollSession.scrollIntoView({ block: 'start', behavior: 'smooth' });
       }
-    })
+    });
   }
 });

@@ -26,9 +26,6 @@ module.exports = function(defaults) {
     },
     'esw-cache-fallback': {
       patterns: [ '/' ],
-    },
-    vendorFiles: {
-      'jquery.js': null
     }
   });
 

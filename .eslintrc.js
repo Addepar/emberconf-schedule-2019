@@ -20,10 +20,14 @@ module.exports = {
     // node files
     {
       files: [
-        'testem.js',
+        '.eslintrc.js',
+        '.template-lintrc.js',
         'ember-cli-build.js',
+        'testem.js',
+        'blueprints/*/index.js',
         'config/**/*.js',
         'lib/*/index.js',
+        'server/**/*.js',
         'serve.js'
       ],
       parserOptions: {

@@ -3,7 +3,7 @@ import { alias } from '@ember/object/computed';
 import { later } from '@ember/runloop';
 import { inject as service } from '@ember/service';
 import ENV from 'emberconf/config/environment';
-import moment from 'emberconf/src/libs/moment';
+import moment from 'emberconf/libs/moment';
 
 export default Controller.extend({
   fastboot: service(),
