@@ -11,13 +11,6 @@ _This tech demo is brought to you via the EmberConf sponsorship from 201 Created
   * Save to mobile home screen for fullscreen app experience
   * Offline cache fallback via service worker
 
-* [Module Unification](https://github.com/emberjs/rfcs/blob/master/text/0143-module-unification.md) File Layout
-  * File system migrated with [ember-module-migrator](https://github.com/rwjblue/ember-module-migrator)
-  * Review the project's file structure organized within `src` directory rather than `app`
-  * Uses local component lookup (components found in context-aware `-component` directories)
-
-  Be sure to watch "Who Moved My Cheese" by Mathew Beale at EmberConf on 3/13 at 3:00 to see more about this feature.
-
 * [Fastboot Rehydration](https://github.com/glimmerjs/glimmer-vm/commit/316805b9175e01698120b9566ec51c88d075026a)
 
   What is Rehydration?
