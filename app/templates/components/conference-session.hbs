@@ -1,22 +1,22 @@
-<small>{{formattedTime}}</small>
+<small>{{this.formattedTime}}</small>
 
-<h3>{{session.name}}</h3>
+<h3>{{@session.name}}</h3>
 
-{{#if session.speakers}}
+{{#if @session.speakers}}
   <ul class="speakers">
-    {{#each session.speakers as |speaker|}}
+    {{#each @session.speakers as |speaker|}}
       <li>{{speaker}}</li>
     {{/each}}
   </ul>
 {{/if}}
 
-{{#if session.description}}
+{{#if @session.description}}
   <div class="description">
-    <p>{{session.description}}</p>
+    <p>{{@session.description}}</p>
 
-    {{#if session.sessions}}
+    {{#if @session.sessions}}
       <ul class="minitalks">
-        {{#each session.sessions as |minitalk|}}
+        {{#each @session.sessions as |minitalk|}}
           <li>
             <small>{{minitalk.time}}</small>
             <h4>{{minitalk.title}}</h4>

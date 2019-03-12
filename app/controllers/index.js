@@ -8,9 +8,9 @@ import moment from 'emberconf/libs/moment';
 export default Controller.extend({
   fastboot: service(),
 
-  days: alias('model'),
-
   now: null,
+
+  days: alias('model'),
 
   _setNow() {
     if (ENV.APP.shouldForceDayOne) {

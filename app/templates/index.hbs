@@ -1,14 +1,14 @@
-{{#each days as |day index|}}
-  {{conference-day
-    day=day
-    index=index
-    now=now
-  }}
+{{#each this.days as |day index|}}
+  <ConferenceDay
+    @day={{day}}
+    @index={{index}}
+    @now={{this.now}}
+  />
 {{/each}}
 
 <div class="github">
   <a href="https://github.com/201-created/emberconf-schedule-2018" target="_blank" rel="noopener" aria-label="GitHub">
-    {{icon-github}}
+    <IconGithub />
     <strong>Curious what's going on here?</strong>
     Check out the code on GitHub!
   </a>
