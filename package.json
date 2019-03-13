@@ -18,8 +18,8 @@
     "test": "ember test"
   },
   "devDependencies": {
-    "@ember/optional-features": "^0.7.0",
     "@ember-decorators/babel-transforms": "^2.1.2",
+    "@ember/optional-features": "^0.7.0",
     "@glimmer/component": "^0.14.0-alpha.3",
     "babel-eslint": "^8.0.0",
     "broccoli-asset-rev": "^3.0.0",
@@ -52,6 +52,7 @@
     "eslint-plugin-ember": "^6.2.0",
     "eslint-plugin-node": "^8.0.1",
     "loader.js": "^4.7.0",
+    "moment": "^2.24.0",
     "qunit-dom": "^0.8.0",
     "sass": "^1.17.2"
   },
