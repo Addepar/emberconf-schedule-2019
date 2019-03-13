@@ -4,16 +4,16 @@ import Schedule from 'emberconf/libs/data';
 import SmoothScroll from 'emberconf/libs/smoothscroll';
 import { whenRoutePainted } from 'ember-app-scheduler';
 
-export default Route.extend({
-  fastboot: service(),
+export default class extends Route {
+  @service fastboot;
 
   model() {
     return Schedule;
-  },
+  }
 
   activate() {
-    this._super(...arguments);
-    if (this.get('fastboot.isFastBoot')) { return; }
+    super.activate(...arguments);
+    if (this.fastboot.isFastBoot) { return; }
 
     // Scroll to current/upcoming sessions
     whenRoutePainted().then(() => {
@@ -27,4 +27,4 @@ export default Route.extend({
       }
     });
   }
-});
+}
