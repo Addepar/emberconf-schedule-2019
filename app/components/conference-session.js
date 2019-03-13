@@ -1,40 +1,41 @@
-import Component from '@ember/component';
+import Component from '@glimmer/component';
 import { computed } from '@ember/object';
+import { tracked } from '@glimmer/tracking';
 import ENV from 'emberconf/config/environment';
 import moment from 'emberconf/libs/moment';
 
-export default Component.extend({
-  classNames: ['session'],
-  classNameBindings: ['isBreak', 'isExpanded', 'isNow', 'isPast'],
+export default class extends Component {
+  @tracked
+  isExpanded = false;
 
-  now: moment().format(),
-  isExpanded: false,
-  session: null,
+  @computed('session.name')
+  get isBreak() {
+    return ['Lunch', 'Snack Break'].includes(this.args.session.name);
+  }
 
-  isBreak: computed('session.name', function() {
-    return ['Lunch', 'Snack Break'].includes(this.get('session.name'));
-  }),
+  @computed('now', 'session.{start,end}')
+  get isNow() {
+    return moment(this.args.now).isBetween(this.args.session.start, this.args.session.end, null, '[)');
+  }
 
-  isNow: computed('now', 'session.{start,end}', function() {
-    return moment(this.now).isBetween(this.get('session.start', null, '[)'), this.get('session.end'));
-  }),
+  @computed('now', 'session.end')
+  get isPast() {
+    return moment(this.args.now).isSameOrAfter(this.args.session.end);
+  }
 
-  isPast: computed('now', 'session.end', function() {
-    return moment(this.now).isSameOrAfter(this.get('session.end'));
-  }),
-
-  formattedTime: computed('session.{start,end}', function() {
-    let startMoment = this._pdxMoment(this.get('session.start'));
-    let endMoment = this._pdxMoment(this.get('session.end'));
+  @computed('session.{start,end}')
+  get formattedTime() {
+    let startMoment = this._pdxMoment(this.args.session.start);
+    let endMoment = this._pdxMoment(this.args.session.end);
     let startFormat = (startMoment.format('a') === endMoment.format('a')) ? 'h:mm' : 'h:mma';
     return `${startMoment.format(startFormat)}-${endMoment.format('h:mma')}`;
-  }),
+  }
 
   _pdxMoment(timestamp) {
     return moment(timestamp).utcOffset(ENV.APP.UTC_OFFSET);
-  },
-
-  click() {
-    this.toggleProperty('isExpanded');
   }
-});
+
+  toggleExpanded() {
+    this.isExpanded = !this.isExpanded;
+  }
+}
