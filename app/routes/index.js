@@ -1,7 +1,7 @@
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
-import Schedule from 'emberconf/libs/data';
-import SmoothScroll from 'emberconf/libs/smoothscroll';
+import Schedule from 'emberconf/lib/data';
+import SmoothScroll from 'emberconf/lib/smoothscroll';
 import { whenRoutePainted } from 'ember-app-scheduler';
 
 export default class extends Route {
