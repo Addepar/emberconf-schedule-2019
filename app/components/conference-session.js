@@ -2,7 +2,7 @@ import Component from '@glimmer/component';
 import { computed } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
 import ENV from 'emberconf/config/environment';
-import moment from 'emberconf/libs/moment';
+import moment from 'moment';
 
 export default class extends Component {
   @tracked

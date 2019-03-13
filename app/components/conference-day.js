@@ -1,6 +1,6 @@
 import Component from '@glimmer/component';
 import { computed } from '@ember/object';
-import moment from 'emberconf/libs/moment';
+import moment from 'moment';
 
 export default class extends Component {
 
