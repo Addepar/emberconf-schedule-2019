@@ -4159,7 +4159,7 @@ ember-cli-babel@^6.0.0-beta.7, ember-cli-babel@^6.12.0, ember-cli-babel@^6.16.0,
     ember-cli-version-checker "^2.1.2"
     semver "^5.5.0"
 
-ember-cli-babel@^7.0.0, ember-cli-babel@^7.1.0, ember-cli-babel@^7.1.2, ember-cli-babel@^7.1.3, ember-cli-babel@^7.2.0, ember-cli-babel@^7.4.3, ember-cli-babel@^7.5.0:
+ember-cli-babel@^7.0.0, ember-cli-babel@^7.1.0, ember-cli-babel@^7.1.2, ember-cli-babel@^7.1.3, ember-cli-babel@^7.2.0, ember-cli-babel@^7.4.2, ember-cli-babel@^7.4.3, ember-cli-babel@^7.5.0:
   version "7.5.0"
   resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-7.5.0.tgz#af654dcef23630391d2efe85aaa3bdf8b6ca17b7"
   integrity sha512-wWXqPPQNRxCtEHvYaLBNiIVgCVCy8YqZ0tM8Dpql1D5nGnPDbaK073sS1vlOYBP7xe5Ab2nXhvQkFwUxFacJ2g==
@@ -4488,7 +4488,7 @@ ember-cli@~3.8.1:
     watch-detector "^0.1.0"
     yam "^1.0.0"
 
-ember-compatibility-helpers@^1.1.2:
+ember-compatibility-helpers@^1.1.2, ember-compatibility-helpers@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/ember-compatibility-helpers/-/ember-compatibility-helpers-1.2.0.tgz#feee16c5e9ef1b1f1e53903b241740ad4b01097e"
   integrity sha512-pUW4MzJdcaQtwGsErYmitFRs0rlCYBAnunVzlFFUBr4xhjlCjgHJo0b53gFnhTgenNM3d3/NqLarzRhDTjXRTg==
@@ -4526,6 +4526,23 @@ ember-maybe-import-regenerator@^0.1.6:
     broccoli-merge-trees "^1.0.0"
     ember-cli-babel "^6.0.0-beta.4"
     regenerator-runtime "^0.9.5"
+
+ember-modifier-manager-polyfill@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/ember-modifier-manager-polyfill/-/ember-modifier-manager-polyfill-1.0.3.tgz#6554b70d09a7d3b80d366b72ed482fb9a3e813c0"
+  integrity sha512-d8Uz0BhAZaqzttF4NXTwJ/A8uPrgd7fMho5jh89BfzJAHu5WZfGewX9cbjh3m6f512ZyxkIeeolw3Z5/Jyaujg==
+  dependencies:
+    ember-cli-babel "^7.4.2"
+    ember-cli-version-checker "^2.1.2"
+    ember-compatibility-helpers "^1.2.0"
+
+ember-on-modifier@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/ember-on-modifier/-/ember-on-modifier-0.7.0.tgz#51975bf393d8880df67610e7ec260c90ef8daa8e"
+  integrity sha512-AetUtHFF1MbiFrNbyBuNomo4ZEswT78PIJJQk1RtJlfL8DVFb/IGOp3d3QiKs+X7EPhH/A5Dt9lUkLeM0cTyhQ==
+  dependencies:
+    ember-cli-babel "^7.5.0"
+    ember-modifier-manager-polyfill "^1.0.3"
 
 ember-qunit@^4.4.1:
   version "4.4.1"

@@ -4,6 +4,10 @@ import { tracked } from '@glimmer/tracking';
 import ENV from 'emberconf/config/environment';
 import moment from 'moment';
 
+// This is a hack until https://github.com/emberjs/ember.js/issues/17727 is resolved
+import Ember from 'ember';
+const { action } = Ember.__loader.require('@ember/object');
+
 export default class extends Component {
   @tracked
   isExpanded = false;
@@ -35,6 +39,7 @@ export default class extends Component {
     return moment(timestamp).utcOffset(ENV.APP.UTC_OFFSET);
   }
 
+  @action
   toggleExpanded() {
     this.isExpanded = !this.isExpanded;
   }
