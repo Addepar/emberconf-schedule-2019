@@ -1,6 +1,6 @@
 # EmberConf Schedule
 
-[![TravisCi](https://travis-ci.org/201-created/emberconf-schedule-2018.svg?branch=master)](https://travis-ci.org/201-created/emberconf-schedule-2018)
+[![TravisCi](https://travis-ci.org/Addepar/emberconf-schedule-2019.svg?branch=master)](https://travis-ci.org/Addepar/emberconf-schedule-2019)
 
 _This tech demo is brought to you via the EmberConf sponsorship from [Addepar](https://addepar.com/careers/)._
 
@@ -34,8 +34,8 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone git@github.com:201-created/emberconf-schedule-2018.git` this repository
-* `cd emberconf-schedule-2018`
+* `git clone git@github.com:Addepar/emberconf-schedule-2019.git` this repository
+* `cd emberconf-schedule-2019`
 * `yarn install`
 
 ## Running / Development
