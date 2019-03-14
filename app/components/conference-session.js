@@ -5,25 +5,24 @@ import ENV from 'emberconf/config/environment';
 import moment from 'moment';
 
 export default class extends Component {
-  @tracked
-  isExpanded = false;
+  @tracked isExpanded = false;
 
-  @computed('session.name')
+  @computed('args.session.name')
   get isBreak() {
     return ['Lunch', 'Snack Break'].includes(this.args.session.name);
   }
 
-  @computed('now', 'session.{start,end}')
+  @computed('args.{now,session.start,session.end}')
   get isNow() {
     return moment(this.args.now).isBetween(this.args.session.start, this.args.session.end, null, '[)');
   }
 
-  @computed('now', 'session.end')
+  @computed('args.{now,session.end}')
   get isPast() {
     return moment(this.args.now).isSameOrAfter(this.args.session.end);
   }
 
-  @computed('session.{start,end}')
+  @computed('args.session.{start,end}')
   get formattedTime() {
     let startMoment = this._pdxMoment(this.args.session.start);
     let endMoment = this._pdxMoment(this.args.session.end);
