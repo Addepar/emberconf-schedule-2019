@@ -1,12 +1,8 @@
 import Component from '@glimmer/component';
-import { computed } from '@ember/object';
+import { action, computed } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
 import ENV from 'emberconf/config/environment';
 import moment from 'moment';
-
-// This is a hack until https://github.com/emberjs/ember.js/issues/17727 is resolved
-import Ember from 'ember';
-const { action } = Ember.__loader.require('@ember/object');
 
 export default class extends Component {
   @tracked
