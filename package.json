@@ -42,6 +42,7 @@
     "ember-inline-css": "^0.0.10",
     "ember-load-initializers": "^2.0.0",
     "ember-maybe-import-regenerator": "^0.1.6",
+    "ember-on-modifier": "^0.7.0",
     "ember-qunit": "^4.4.1",
     "ember-resolver": "^5.0.1",
     "ember-service-worker": "^0.7.2",

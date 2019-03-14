@@ -6,7 +6,7 @@
    (if this.isNow " is-now")
    (if this.isPast " is-past")
   }}
-  {{action this.toggleExpanded}}
+  {{on "click" this.toggleExpanded}}
 >
   <small>{{this.formattedTime}}</small>
 
