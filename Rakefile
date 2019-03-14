@@ -10,7 +10,7 @@ desc "Import session data"
 task :default do
 
   schedule_uri = "https://raw.githubusercontent.com/tildeio/emberconf-2019/master/data/content.yml?token=AAPUNuyeh4MdZZQteGWqPFZ-y1ub4zh5ks5cjBc9wA%3D%3D"
-  data_lib = "src/libs/data.js";
+  data_lib = "app/lib/data.js";
 
   content_data = load_remote_yaml(schedule_uri)
 
@@ -24,7 +24,7 @@ task :default do
     open(data_lib, "w+") do |f|
       f << "export default "
       f << JSON.pretty_generate(parsed_data)
-      f << ";"
+      f << ";\n"
     end
 
     puts green_output("Schedule data has been updated!")

@@ -190,10 +190,9 @@ export default [
         "sessions": [
           {
             "time": "4:00-4:05pm",
-            "title": "Introductions and Preamble",
+            "title": "How to Grow or Save Your Favorite Open Source Project",
             "speakers": [
-              "Vaidehi Joshi",
-              "Danielle Adams"
+              "Jen Weber"
             ]
           },
           {
