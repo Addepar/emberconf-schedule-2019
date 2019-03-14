@@ -1,3 +1,15 @@
+{{#if this.isDebug}}
+  <div>
+    <input
+      type="range"
+      min="32400"
+      max="68400"
+      {{on "input" (action this.setSecondsInDay value="target.value")}}
+    >
+    {{this.now}}
+  </div>
+{{/if}}
+
 {{#each this.days as |day index|}}
   <ConferenceDay
     @day={{day}}
