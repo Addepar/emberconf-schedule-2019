@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "description": "Mobile-friendly PWA for viewing the 2019 EmberConf schedule",
-  "repository": "https://github.com/201-created/emberconf-schedule-2018",
+  "repository": "https://github.com/Addepar/emberconf-schedule-2019",
   "license": "MIT",
-  "author": "201 Created, Inc.",
+  "author": "Addepar, Inc.",
   "directories": {
     "doc": "doc",
     "test": "tests"
