@@ -17,7 +17,18 @@ export default class extends Controller {
   }
 
   get secondsInDay() {
-    let nowTime = moment(this.now).utcOffset(ENV.APP.UTC_OFFSET).format('H:mm:ss');
+    let nowTime;
+    let nowMoment = this._pdxMoment(this.now);
+    switch (true) {
+      case (nowMoment.isBefore('2019-03-19T09:00:00-07:00')):
+        nowTime = '09:00:00';
+        break;
+      case (nowMoment.isAfter('2019-03-19T19:00:00-07:00')):
+        nowTime = '19:00:00';
+        break;
+      default:
+        nowTime = nowMoment.format('H:mm:ss');
+    }
     return moment.duration(nowTime).asSeconds();
   }
   set secondsInDay(seconds) {
@@ -25,6 +36,10 @@ export default class extends Controller {
     let time = moment('2019-01-01').startOf('day').seconds(seconds).format('HH:mm:ss');
     this._setFakeDayOne(time);
     return seconds;
+  }
+
+  _pdxMoment(time) {
+    return moment(time).utcOffset(ENV.APP.UTC_OFFSET);
   }
 
   _setFakeDayOne(time) {
@@ -38,7 +53,7 @@ export default class extends Controller {
       this._setFakeDayOne(time);
     } else {
       // Use real date and time for non-dev environments
-      this.now = moment().utcOffset(ENV.APP.UTC_OFFSET).format();
+      this.now = this._pdxMoment().format();
     }
 
     if (!ENV.APP.shouldUpdateTime || this.fastboot.isFastBoot || this.isDebug) {
