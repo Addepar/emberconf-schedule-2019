@@ -111,6 +111,39 @@ footer {
   }
 }
 
+.debug {
+  text-align: center;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 0.5rem 0;
+  width: 100%;
+
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 0.5rem;
+    cursor: pointer;
+    background: $ember;
+  }
+  &::-webkit-slider-thumb {
+    border: solid 2px white;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 0.75rem;
+    background: $ember;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -0.5rem;
+  }
+  &:focus {
+    outline: none;
+    &::-webkit-slider-runnable-track {
+      background: $ember;
+    }
+  }
+}
+
 h2 {
   margin: 0;
   padding: 1rem;

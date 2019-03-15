@@ -1,10 +1,12 @@
 {{#if this.isDebug}}
-  <div>
+  <div class="debug">
     <input
       type="range"
       min="32400"
       max="68400"
-      {{on "input" (action this.setSecondsInDay value="target.value")}}
+      step="60"
+      value={{this.secondsInDay}}
+      {{on "input" (action (mut this.secondsInDay) value="target.value")}}
     >
     {{this.now}}
   </div>
