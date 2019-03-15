@@ -1,6 +1,6 @@
 import Controller from '@ember/controller';
+import { action } from '@ember/object';
 import { alias } from '@ember/object/computed';
-import { later } from '@ember/runloop';
 import { inject as service } from '@ember/service';
 import { tracked } from '@glimmer/tracking';
 import ENV from 'emberconf/config/environment';
@@ -13,19 +13,26 @@ export default class extends Controller {
 
   @alias('model') days;
 
+  get isDebug() {
+    return !this.fastboot.isFastBoot && window.location.search.includes('debug');
+  }
+
   _setNow() {
     if (ENV.APP.shouldForceDayOne) {
-      // Use conf Day 1 for development
-      let time = moment().utcOffset(ENV.APP.UTC_OFFSET).format('HH:mm:ss');
-      this.now = moment(`2019-03-19T${time}${ENV.APP.UTC_OFFSET}`).format();
+      // Use local clock time with Day 1 for local development
+      let time = moment().format('HH:mm:ss');
+      this.now = `2019-03-19T${time}${ENV.APP.UTC_OFFSET}`;
     } else {
       // Use real date and time for non-dev environments
       this.now = moment().utcOffset(ENV.APP.UTC_OFFSET).format();
     }
 
-    if (!ENV.APP.shouldUpdateTime || this.fastboot.isFastBoot) { return; }
+    if (!ENV.APP.shouldUpdateTime || this.fastboot.isFastBoot || this.isDebug) {
+      return;
+    }
 
-    later(this, function() {
+    window.setTimeout(() => {
+      if (this.isDestroying) { return; }
       this._setNow();
     }, 10000);
   }
@@ -33,5 +40,10 @@ export default class extends Controller {
   constructor() {
     super(...arguments);
     this._setNow();
+  }
+
+  @action
+  setSecondsInDay(secondsString) {
+    this.now = moment('2019-03-19').hours(0).minutes(0).seconds(secondsString).format();
   }
 }

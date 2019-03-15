@@ -1,28 +1,30 @@
 import Component from '@glimmer/component';
-import { action, computed } from '@ember/object';
+import { action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
 import ENV from 'emberconf/config/environment';
 import moment from 'moment';
 
 export default class extends Component {
+  /*
+   * This does not seem like it should be needed. We expected that autotrack
+   * would work because the root `now` on the controller was tracked.
+   */
+  @tracked args;
+
   @tracked isExpanded = false;
 
-  @computed('args.session.name')
   get isBreak() {
     return ['Lunch', 'Snack Break'].includes(this.args.session.name);
   }
 
-  @computed('args.{now,session.start,session.end}')
   get isNow() {
     return moment(this.args.now).isBetween(this.args.session.start, this.args.session.end, null, '[)');
   }
 
-  @computed('args.{now,session.end}')
   get isPast() {
     return moment(this.args.now).isSameOrAfter(this.args.session.end);
   }
 
-  @computed('args.session.{start,end}')
   get formattedTime() {
     let startMoment = this._pdxMoment(this.args.session.start);
     let endMoment = this._pdxMoment(this.args.session.end);
