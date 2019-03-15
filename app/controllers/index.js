@@ -35,6 +35,7 @@ export default class extends Controller {
     // Use range slider seconds with Day 1 for debug
     let time = moment('2019-01-01').startOf('day').seconds(seconds).format('HH:mm:ss');
     this._setFakeDayOne(time);
+    this._hasSetSeconds = true;
     return seconds;
   }
 
@@ -56,12 +57,12 @@ export default class extends Controller {
       this.now = this._pdxMoment().format();
     }
 
-    if (!ENV.APP.shouldUpdateTime || this.fastboot.isFastBoot || this.isDebug) {
+    if (!ENV.APP.shouldUpdateTime || this.fastboot.isFastBoot) {
       return;
     }
 
     window.setTimeout(() => {
-      if (this.isDestroying) { return; }
+      if (this._hasSetSeconds || this.isDestroying) { return; }
       this._setNow();
     }, 10000);
   }
