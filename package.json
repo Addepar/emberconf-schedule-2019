@@ -48,7 +48,7 @@
     "ember-service-worker": "^0.7.2",
     "ember-service-worker-asset-cache": "^0.6.4",
     "ember-service-worker-cache-fallback": "^0.6.2",
-    "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/f89d7411a12496979f18231f2b4504fcb7d30bdf.tgz",
+    "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/71aacb5bcbcd5ccd717090408caac582a281e2b3.tgz",
     "ember-web-app": "^3.0.0-beta.2",
     "eslint-plugin-ember": "^6.2.0",
     "eslint-plugin-node": "^8.0.1",

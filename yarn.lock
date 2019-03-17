@@ -4662,14 +4662,14 @@ ember-source-channel-url@^1.1.0:
   dependencies:
     got "^8.0.1"
 
-"ember-source@https://s3.amazonaws.com/builds.emberjs.com/canary/shas/f89d7411a12496979f18231f2b4504fcb7d30bdf.tgz":
+"ember-source@https://s3.amazonaws.com/builds.emberjs.com/canary/shas/71aacb5bcbcd5ccd717090408caac582a281e2b3.tgz":
   version "3.10.0-canary"
-  resolved "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/f89d7411a12496979f18231f2b4504fcb7d30bdf.tgz#0969cd4444cba28dabcc0884f645fab1685cfc85"
+  resolved "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/71aacb5bcbcd5ccd717090408caac582a281e2b3.tgz#ccebc6e095f5a0eaadc3b404ae349f074292c089"
   dependencies:
     broccoli-funnel "^2.0.2"
     broccoli-merge-trees "^3.0.2"
     chalk "^2.4.2"
-    ember-cli-babel "^7.5.0"
+    ember-cli-babel "^7.6.0"
     ember-cli-get-component-path-option "^1.0.0"
     ember-cli-is-package-missing "^1.0.0"
     ember-cli-normalize-entity-name "^1.0.0"
