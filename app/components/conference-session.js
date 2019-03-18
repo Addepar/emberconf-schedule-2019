@@ -5,11 +5,6 @@ import ENV from 'emberconf/config/environment';
 import moment from 'moment';
 
 export default class extends Component {
-  /*
-   * This does not seem like it should be needed. We expected that autotrack
-   * would work because the root `now` on the controller was tracked.
-   */
-  @tracked args;
 
   @tracked isExpanded = false;
 
