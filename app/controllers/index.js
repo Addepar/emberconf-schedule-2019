@@ -69,6 +69,6 @@ export default class extends Controller {
 
   constructor() {
     super(...arguments);
-    this._setNow();
+    // this._setNow();
   }
 }
